@@ -61,6 +61,7 @@ MID_LEVEL = re.compile(
     | \b(ii|iii|iv)\b
     | \blevel\s*[2-9]\b
     | \beng\s*[2-9]\b
+    | \bl[4-9]\b | \(l[4-9]\)
     | \bp[2-9]\b
     | \bc1[1-9]\b
     """,
@@ -79,6 +80,7 @@ JUNIOR = re.compile(
     | \bearly[\s-]?(career|talent|in\s+career)\b | \brotation(al)?\b
     | \bdevelopment\s+program\b | \btraining\s+program\b | \bapprentice(ship)?\b
     | \bfresher\b | \bamts\b | \b(tdp|tldp)\b
+    | \basc\b | \(l3\) | \bl3\b
     | \b20(2[5-9]|3[0-1])\s+(start|grad|graduate|cohort)
     """,
     re.I | re.X,

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Junior SWE Jobs</title>
-<meta name="description" content="New junior and new-grad software engineering roles at Fortune 500 companies, newest first.">
+<meta name="description" content="New junior and new-grad software engineering roles at Fortune 500 companies and big tech employers, newest first.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -98,7 +98,7 @@ footer.wrap{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:14
 <body>
 <header class="wrap">
   <h1>Junior SWE Jobs</h1>
-  <p class="lede">New-grad, entry-level and level-unlisted software roles from Fortune 500 career sites, newest first.</p>
+  <p class="lede">New-grad, entry-level and level-unlisted software roles from Fortune 500 companies and other big software employers, newest first.</p>
   <p class="status" id="status">Loading jobs…</p>
   <div class="newbar" id="newbar" role="status">
     <span><b id="newcount">0</b> roles appeared since your last visit.</span>
@@ -110,7 +110,7 @@ footer.wrap{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:14
   <div class="wrap">
     <div class="row">
       <input class="search" id="q" type="search" placeholder="Search role, company or city" aria-label="Search role, company or city">
-      <select id="company" aria-label="Company"><option value="">All companies</option></select>
+      <select id="company" aria-label="Company"><option value="">All companies</option><option value="@fortune500">Fortune 500 only</option><option value="@other">Other big tech employers</option></select>
       <select id="where" aria-label="Location">
         <option value="us">US and unlisted</option>
         <option value="any">Anywhere</option>
@@ -193,7 +193,7 @@ footer.wrap{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:14
     const where = $("where").value;
     let list = jobs.filter(j =>
       levels.has(j.level) &&
-      (!co || j.company === co) &&
+      (!co || (co[0] === "@" ? (j.group || "fortune500") === co.slice(1) : j.company === co)) &&
       (where === "any" || j.country !== "non-us") &&
       (!onlyNew || isNew(j)) &&
       (!q || (j.title + " " + j.company + " " + j.location).toLowerCase().includes(q))
@@ -267,8 +267,13 @@ footer.wrap{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:14
     fetch("data/status.json", {cache:"no-cache"}).then(r => r.ok ? r.json() : null).catch(() => null)
   ]).then(([data, status]) => {
     jobs = data.jobs || [];
-    const companies = [...new Set(jobs.map(j => j.company))].sort();
-    $("company").insertAdjacentHTML("beforeend", companies.map(c => `<option>${esc(c)}</option>`).join(""));
+    const groupOf = {};
+    jobs.forEach(j => { groupOf[j.company] = j.group || "fortune500"; });
+    const optgroup = (label, g) => {
+      const names = Object.keys(groupOf).filter(c => groupOf[c] === g).sort();
+      return names.length ? `<optgroup label="${label}">${names.map(c => `<option>${esc(c)}</option>`).join("")}</optgroup>` : "";
+    };
+    $("company").insertAdjacentHTML("beforeend", optgroup("Fortune 500", "fortune500") + optgroup("Other big tech employers", "other"));
 
     if (data.generated_at){
       $("status").innerHTML = `Updated <strong>${esc(fmtTime(data.generated_at))}</strong>. ` +

@@ -28,7 +28,7 @@ DATA = ROOT / "site" / "data"
 
 SEARCHES = ["software", "developer", "graduate"]   # Workday free-text searches per site
 MAX_PER_SEARCH = int(os.environ.get("MAX_PER_SEARCH", "300"))
-WORKERS = int(os.environ.get("WORKERS", "6"))       # companies fetched in parallel
+WORKERS = int(os.environ.get("WORKERS", "8"))       # companies fetched in parallel
 DROP_STALE_DAYS = 7  # keep a failing company's old jobs this long before dropping them
 
 
@@ -50,83 +50,119 @@ def save_json(path, data):
     tmp.replace(path)
 
 
-def fetch_company(company, resolved):
-    """Return (raw_jobs, errors) for one company."""
-    ats = company.get("ats", "workday")
+EIGHTFOLD_QUERIES = ["software engineer", "new grad"]
+KEEP_UNSEEN_DAYS = 14  # when a scan was capped, jobs we didn't reach stay this long
+
+
+def fetch_source(src, resolved, meta):
+    """Fetch one source config. Returns (raw_jobs, errors)."""
+    ats = src.get("ats", "workday")
     raw, errors = [], []
-    if ats == "workday":
-        for url in company.get("urls", []):
-            try:
-                raw.extend(sources.fetch_workday(url, SEARCHES, MAX_PER_SEARCH, resolved))
-            except sources.FetchError as e:
-                errors.append(str(e))
-    elif ats == "amazon":
+
+    def run(gen):
         try:
-            raw.extend(sources.fetch_amazon(["software development engineer", "new grad software"], 600))
+            raw.extend(gen)
         except sources.FetchError as e:
             errors.append(str(e))
+
+    if ats == "workday":
+        for url in src.get("urls", []):
+            run(sources.fetch_workday(url, SEARCHES, MAX_PER_SEARCH, resolved, meta))
+    elif ats == "amazon":
+        run(sources.fetch_amazon(["software development engineer", "new grad software"], 600, meta))
     elif ats in ("greenhouse", "lever", "ashby"):
         fn = {"greenhouse": sources.fetch_greenhouse, "lever": sources.fetch_lever,
               "ashby": sources.fetch_ashby}[ats]
-        try:
-            raw.extend(fn(company["board"]))
-        except sources.FetchError as e:
-            errors.append(str(e))
+        for board in src.get("boards") or [src["board"]]:
+            run(fn(board))
+    elif ats == "eightfold":
+        run(sources.fetch_eightfold(src["host"], src["domain"], EIGHTFOLD_QUERIES,
+                                    src.get("max_pages", 15), src.get("delay", 1.5), meta))
+    elif ats == "oracle":
+        run(sources.fetch_oracle(src["host"], src["site"], src.get("max_rows", 1000), meta))
     else:
         errors.append(f"Unknown ats '{ats}'")
     return raw, errors
 
 
+def fetch_company(company, resolved):
+    """Return (raw_jobs, errors, truncated). Tries company["alt"] if the main source gives nothing."""
+    meta = {}
+    raw, errors = fetch_source(company, resolved, meta)
+    if not raw and errors and company.get("alt"):
+        alt_meta = {}
+        alt_raw, alt_errors = fetch_source(company["alt"], resolved, alt_meta)
+        if alt_raw:
+            return alt_raw, [], bool(alt_meta.get("truncated"))
+        errors += alt_errors
+    return raw, errors, bool(meta.get("truncated"))
+
+
 def check_company(company, resolved):
-    """Lightweight reachability check (no paging)."""
-    ats = company.get("ats", "workday")
-    if ats != "workday":
+    """Lightweight reachability check (first page only for non-Workday sources)."""
+    def check(src):
+        ats = src.get("ats", "workday")
+        errs = []
+        if ats == "workday":
+            for url in src.get("urls", []):
+                try:
+                    sources.resolve_workday(url, resolved)
+                except sources.FetchError as e:
+                    errs.append(str(e))
+            return errs
         try:
-            next(iter(fetch_company(company, resolved)[0]), None)
-            return []
+            raw, errs = fetch_source(dict(src, max_pages=1, max_rows=200), resolved, {})
         except Exception as e:  # noqa: BLE001
-            return [str(e)]
-    errors = []
-    for url in company.get("urls", []):
-        try:
-            sources.resolve_workday(url, resolved)
-        except sources.FetchError as e:
-            errors.append(str(e))
-    return errors
+            errs = [str(e)]
+        return errs
+
+    errs = check(company)
+    if errs and company.get("alt") and not check(company["alt"]):
+        return []
+    return errs
 
 
-def merge(previous, company_name, raw_jobs, ok, now):
+def merge(previous, company_name, raw_jobs, ok, now, truncated=False, group="fortune500"):
     """Combine this run's jobs for one company with what we knew before."""
     prev_for_company = {j["id"]: j for j in previous if j["company"] == company_name}
+    if not ok:
+        # Fetch failed: keep recent old data so one bad run doesn't wipe the company.
+        cutoff = (dt.datetime.fromisoformat(now) - dt.timedelta(days=DROP_STALE_DAYS)).isoformat()
+        return [j for j in prev_for_company.values() if j.get("last_seen", now) >= cutoff]
+
     out = []
-    if ok:
-        for r in raw_jobs:
-            level = classify(r["title"])
-            if level is None:
-                continue
-            old = prev_for_company.get(r["id"])
-            out.append({
-                "id": r["id"],
-                "company": company_name,
-                "title": r["title"],
-                "url": r["url"],
-                "location": r["location"],
-                "country": guess_country(r["location"], r["title"]),
-                "level": level,
-                # Keep the first date we computed: Workday's "Posted N Days Ago" drifts.
-                "posted_at": (old or {}).get("posted_at") or r["posted_at"],
-                "posted_approx": old["posted_approx"] if old and "posted_approx" in old else r["posted_approx"],
-                "first_seen": (old or {}).get("first_seen") or now,
-                "last_seen": now,
-            })
-        # De-duplicate (same job reachable from two sites of one company).
-        uniq = {}
-        for j in out:
-            uniq.setdefault((j["title"].lower(), j["location"].lower(), j["url"].split("_")[-1]), j)
-        return list(uniq.values())
-    # Fetch failed: keep recent old data so one bad run doesn't wipe the company.
-    cutoff = (dt.datetime.fromisoformat(now) - dt.timedelta(days=DROP_STALE_DAYS)).isoformat()
-    return [j for j in prev_for_company.values() if j.get("last_seen", now) >= cutoff]
+    for r in raw_jobs:
+        level = classify(r["title"])
+        if level is None:
+            continue
+        old = prev_for_company.get(r["id"])
+        out.append({
+            "id": r["id"],
+            "company": company_name,
+            "group": group,
+            "title": r["title"],
+            "url": r["url"],
+            "location": r["location"],
+            "country": guess_country(r["location"], r["title"]),
+            "level": level,
+            # Keep the first date we computed: Workday's "Posted N Days Ago" drifts.
+            "posted_at": (old or {}).get("posted_at") or r["posted_at"],
+            "posted_approx": old["posted_approx"] if old and "posted_approx" in old else r["posted_approx"],
+            "first_seen": (old or {}).get("first_seen") or now,
+            "last_seen": now,
+        })
+    # De-duplicate (same job reachable from two sites of one company).
+    uniq = {}
+    for j in out:
+        uniq.setdefault((j["title"].lower(), j["location"].lower(), j["url"].split("_")[-1]), j)
+    out = list(uniq.values())
+
+    if truncated:
+        # The scan stopped at a cap, so a job we didn't reach may still be open.
+        seen = {j["id"] for j in out}
+        cutoff = (dt.datetime.fromisoformat(now) - dt.timedelta(days=KEEP_UNSEEN_DAYS)).isoformat()
+        out += [j for i, j in prev_for_company.items() if i not in seen and j.get("last_seen", now) >= cutoff]
+    return out
 
 
 def main(argv=None):
@@ -152,14 +188,14 @@ def main(argv=None):
     def work(c):
         t0 = time.time()
         if args.check:
-            return c, [], check_company(c, resolved), time.time() - t0
-        raw, errs = fetch_company(c, resolved)
-        return c, raw, errs, time.time() - t0
+            return c, ([], False), check_company(c, resolved), time.time() - t0
+        raw, errs, truncated = fetch_company(c, resolved)
+        return c, (raw, truncated), errs, time.time() - t0
 
     with cf.ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        for c, raw, errs, secs in pool.map(work, companies):
+        for c, (raw, truncated), errs, secs in pool.map(work, companies):
             ok = not errs or bool(raw)  # partial success (one of two sites) still counts
-            jobs = [] if args.check else merge(previous, c["name"], raw, ok, now)
+            jobs = [] if args.check else merge(previous, c["name"], raw, ok, now, truncated, c.get("group", "fortune500"))
             merged.extend(jobs)
             status[c["name"]] = {
                 "ok": not errs,
@@ -167,6 +203,7 @@ def main(argv=None):
                 "errors": errs,
                 "scanned": len(raw),
                 "junior_roles": len(jobs),
+                "capped": truncated,
                 "seconds": round(secs, 1),
             }
             flag = "OK " if not errs else ("PART" if raw else "FAIL")

@@ -106,7 +106,11 @@ def resolve_workday(url, cache):
     raise FetchError(f"No working Workday host for {url} (first error: {errors[0] if errors else 'n/a'})")
 
 
-def fetch_workday(url, searches, max_per_search, cache):
+def fetch_workday(url, searches, max_per_search, cache, meta=None):
+    """Yield jobs from one Workday career site. Sets meta["truncated"] if a search hit the cap.
+    Note: Workday pages are 20 rows max, and past offset 2,000 it silently repeats page one."""
+    meta = meta if meta is not None else {}
+    max_per_search = min(max_per_search, 2000)
     tenant, wd, site = resolve_workday(url, cache)
     api = workday_api(tenant, wd, site)
     base = f"https://{tenant}.{wd}.myworkdayjobs.com/{site}"
@@ -134,14 +138,18 @@ def fetch_workday(url, searches, max_per_search, cache):
                     "posted_approx": approx,
                 }
             offset += 20
-            if not posts or offset >= total or offset >= max_per_search:
+            if not posts or offset >= total:
+                break
+            if offset >= max_per_search:
+                meta["truncated"] = True
                 break
             time.sleep(REQUEST_DELAY)
 
 
 # --- Amazon (amazon.jobs public search JSON) ---------------------------------
 
-def fetch_amazon(searches, max_per_search):
+def fetch_amazon(searches, max_per_search, meta=None):
+    meta = meta if meta is not None else {}
     seen = set()
     for q in searches:
         offset = 0
@@ -150,7 +158,7 @@ def fetch_amazon(searches, max_per_search):
                 ("base_query", q), ("result_limit", "100"), ("offset", str(offset)),
                 ("sort", "recent"), ("normalized_country_code[]", "USA"),
             ]
-            data = _request("https://www.amazon.jobs/en/search.json?" + urllib.parse.urlencode(params))
+            data = _request("https://amazon.jobs/en/search.json?" + urllib.parse.urlencode(params))
             jobs = data.get("jobs") or []
             for j in jobs:
                 jid = j.get("id_icims") or j.get("id") or j.get("job_path")
@@ -173,6 +181,8 @@ def fetch_amazon(searches, max_per_search):
             offset += 100
             if len(jobs) < 100:
                 break
+            if offset >= max_per_search and (data.get("hits") or 0) > offset:
+                meta["truncated"] = True
             time.sleep(REQUEST_DELAY)
 
 
@@ -227,3 +237,121 @@ def fetch_ashby(board):
             "posted_at": _iso_date(j.get("publishedAt")),
             "posted_approx": False,
         }
+
+
+# --- Eightfold (Microsoft, Netflix, Lockheed Martin, Morgan Stanley, Ford, ...) ---------
+# Newer search: GET {host}/api/pcsx/search?domain=..&query=..&start=N  -> data.positions (10 per page)
+# Older search: GET {host}/api/apply/v2/jobs?domain=..&query=..&start=N -> positions
+# Some hosts rate-limit hard (Microsoft answers 429 quickly), so pages are capped and slow.
+
+def _epoch_to_date(ts):
+    try:
+        ts = float(ts)
+    except (TypeError, ValueError):
+        return None
+    if ts > 1e12:  # milliseconds
+        ts /= 1000
+    return dt.datetime.fromtimestamp(ts, dt.timezone.utc).date().isoformat()
+
+
+def _eightfold_row(host, domain, p):
+    pid = p.get("id") or p.get("positionId") or p.get("ats_job_id")
+    path = p.get("positionUrl") or ""
+    if not pid and path:
+        m = re.search(r"/job/(\d+)", path)
+        pid = m.group(1) if m else path
+    url = p.get("canonicalPositionUrl") or (
+        f"https://{host}{path}" if path.startswith("/") else path) or f"https://{host}/careers/job/{pid}"
+    locs = p.get("locations") or ([p["location"]] if p.get("location") else [])
+    locs = [l if isinstance(l, str) else (l.get("name") or "") for l in locs]
+    location = locs[0] if locs else ""
+    if len(locs) > 1:
+        location += f" +{len(locs) - 1} more"
+    posted = _epoch_to_date(p.get("postedTs") or p.get("t_create") or p.get("creationTs"))
+    return {
+        "id": f"ef:{domain}:{pid}",
+        "title": (p.get("name") or p.get("title") or "").strip(),
+        "url": url,
+        "location": location,
+        "posted_at": posted,
+        "posted_approx": posted is None,
+    }
+
+
+def fetch_eightfold(host, domain, queries, max_pages=15, delay=1.5, meta=None):
+    meta = meta if meta is not None else {}
+    seen, use_v2 = set(), False
+    for q in queries:
+        start, pages = 0, 0
+        while True:
+            params = {"domain": domain, "query": q, "location": "", "start": start, "sort_by": "timestamp"}
+            if use_v2:
+                params["num"] = 10
+                url = f"https://{host}/api/apply/v2/jobs?" + urllib.parse.urlencode(params)
+            else:
+                url = f"https://{host}/api/pcsx/search?" + urllib.parse.urlencode(params)
+            try:
+                data = _request(url, retries=0)
+            except FetchError as e:
+                msg = str(e)
+                if not use_v2 and ("HTTP 403" in msg or "HTTP 404" in msg) and not seen:
+                    use_v2 = True  # this tenant only answers the older search
+                    continue
+                if any(code in msg for code in ("HTTP 429", "HTTP 405")):
+                    meta["truncated"] = True  # rate-limited: keep what we have
+                    if seen:
+                        return
+                raise
+            box = data if use_v2 else (data.get("data") or {})
+            positions = box.get("positions") or []
+            count = box.get("count") or 0
+            for p in positions:
+                row = _eightfold_row(host, domain, p)
+                if row["id"] in seen:
+                    continue
+                seen.add(row["id"])
+                yield row
+            pages += 1
+            start += len(positions) or 10
+            if not positions or start >= count:
+                break
+            if pages >= max_pages:
+                meta["truncated"] = True
+                break
+            time.sleep(delay)
+        time.sleep(delay)
+
+
+# --- Oracle Recruiting Cloud (JPMorgan Chase, ...) -----------------------------
+# GET {host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true
+#     &expand=requisitionList.secondaryLocations
+#     &finder=findReqs;siteNumber=SITE,limit=200,offset=N,sortBy=POSTING_DATES_DESC
+# Newest first; we read the newest `max_rows` and filter titles locally.
+
+def fetch_oracle(host, site, max_rows=1000, meta=None):
+    meta = meta if meta is not None else {}
+    offset, total = 0, 0
+    while offset < max_rows:
+        url = (f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+               f"?onlyData=true&expand=requisitionList.secondaryLocations"
+               f"&finder=findReqs;siteNumber={site},limit=200,offset={offset},sortBy=POSTING_DATES_DESC")
+        data = _request(url)
+        item = (data.get("items") or [{}])[0]
+        reqs = item.get("requisitionList") or []
+        total = item.get("TotalJobsCount") or total
+        for r in reqs:
+            rid = r.get("Id") or r.get("RequisitionId")
+            yield {
+                "id": f"oracle:{host}:{rid}",
+                "title": (r.get("Title") or "").strip(),
+                "url": f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{rid}",
+                "location": r.get("PrimaryLocation") or "",
+                "posted_at": _iso_date(r.get("PostedDate")),
+                "posted_approx": not r.get("PostedDate"),
+            }
+        offset += 200
+        if not reqs or offset >= total:
+            return
+        time.sleep(REQUEST_DELAY)
+    if total > offset:
+        meta["truncated"] = True
