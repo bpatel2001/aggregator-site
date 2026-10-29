@@ -1,30 +1,33 @@
 {
- "run_at": "2026-10-29T17:49:41+00:00",
+ "run_at": "2026-10-29T18:44:30+00:00",
  "check_only": false,
  "companies": {
   "Walmart": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 846,
+   "scanned": 847,
    "junior_roles": 2,
-   "seconds": 72.5
+   "capped": true,
+   "seconds": 70.1
   },
   "Amazon": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 600,
-   "junior_roles": 341,
-   "seconds": 10.3
+   "junior_roles": 343,
+   "capped": true,
+   "seconds": 7.4
   },
   "CVS Health": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 503,
+   "scanned": 501,
    "junior_roles": 4,
-   "seconds": 29.6
+   "capped": true,
+   "seconds": 22.2
   },
   "Elevance Health": {
    "ok": true,
@@ -32,15 +35,17 @@
    "errors": [],
    "scanned": 39,
    "junior_roles": 1,
-   "seconds": 2.6
+   "capped": false,
+   "seconds": 1.6
   },
   "Cigna": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 352,
+   "scanned": 351,
    "junior_roles": 20,
-   "seconds": 35.6
+   "capped": true,
+   "seconds": 32.6
   },
   "Centene": {
    "ok": true,
@@ -48,7 +53,8 @@
    "errors": [],
    "scanned": 311,
    "junior_roles": 0,
-   "seconds": 24.2
+   "capped": true,
+   "seconds": 23.6
   },
   "Humana": {
    "ok": true,
@@ -56,7 +62,8 @@
    "errors": [],
    "scanned": 196,
    "junior_roles": 0,
-   "seconds": 24.2
+   "capped": false,
+   "seconds": 18.3
   },
   "Cardinal Health": {
    "ok": true,
@@ -64,7 +71,8 @@
    "errors": [],
    "scanned": 341,
    "junior_roles": 11,
-   "seconds": 41.6
+   "capped": true,
+   "seconds": 26.7
   },
   "McKesson": {
    "ok": true,
@@ -72,23 +80,26 @@
    "errors": [],
    "scanned": 375,
    "junior_roles": 25,
-   "seconds": 41.4
+   "capped": true,
+   "seconds": 32.9
   },
   "Chevron": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 22,
-   "junior_roles": 2,
-   "seconds": 2.5
+   "scanned": 62,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 5.4
   },
   "Marathon Petroleum": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 116,
+   "scanned": 120,
    "junior_roles": 0,
-   "seconds": 12.3
+   "capped": false,
+   "seconds": 11.1
   },
   "Bank of America": {
    "ok": true,
@@ -96,55 +107,62 @@
    "errors": [],
    "scanned": 165,
    "junior_roles": 3,
-   "seconds": 15.3
+   "capped": false,
+   "seconds": 8.7
   },
   "Wells Fargo": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 373,
+   "scanned": 366,
    "junior_roles": 2,
-   "seconds": 36.5
+   "capped": true,
+   "seconds": 32.9
   },
   "Citigroup": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 807,
-   "junior_roles": 102,
-   "seconds": 69.8
+   "junior_roles": 103,
+   "capped": true,
+   "seconds": 66.0
   },
   "Capital One": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 460,
+   "scanned": 461,
    "junior_roles": 1,
-   "seconds": 21.4
+   "capped": true,
+   "seconds": 21.2
   },
   "U.S. Bancorp": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 451,
-   "junior_roles": 9,
-   "seconds": 48.0
+   "junior_roles": 10,
+   "capped": true,
+   "seconds": 38.6
   },
   "PNC Financial": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 333,
+   "scanned": 332,
    "junior_roles": 2,
+   "capped": true,
    "seconds": 29.8
   },
   "Truist Financial": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 564,
-   "junior_roles": 12,
-   "seconds": 55.8
+   "scanned": 563,
+   "junior_roles": 13,
+   "capped": true,
+   "seconds": 48.6
   },
   "KeyCorp": {
    "ok": true,
@@ -152,15 +170,17 @@
    "errors": [],
    "scanned": 70,
    "junior_roles": 1,
-   "seconds": 7.8
+   "capped": false,
+   "seconds": 5.8
   },
   "State Street": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 439,
-   "junior_roles": 30,
-   "seconds": 42.7
+   "scanned": 441,
+   "junior_roles": 32,
+   "capped": true,
+   "seconds": 37.7
   },
   "Fannie Mae": {
    "ok": true,
@@ -168,15 +188,17 @@
    "errors": [],
    "scanned": 52,
    "junior_roles": 1,
-   "seconds": 8.1
+   "capped": false,
+   "seconds": 5.9
   },
   "USAA": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 57,
+   "scanned": 56,
    "junior_roles": 2,
-   "seconds": 4.8
+   "capped": false,
+   "seconds": 7.9
   },
   "Travelers": {
    "ok": true,
@@ -184,15 +206,17 @@
    "errors": [],
    "scanned": 383,
    "junior_roles": 4,
-   "seconds": 44.0
+   "capped": true,
+   "seconds": 45.0
   },
   "Allstate": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 400,
+   "scanned": 396,
    "junior_roles": 6,
-   "seconds": 42.7
+   "capped": true,
+   "seconds": 39.4
   },
   "Nationwide": {
    "ok": true,
@@ -200,31 +224,35 @@
    "errors": [],
    "scanned": 158,
    "junior_roles": 3,
-   "seconds": 20.9
+   "capped": false,
+   "seconds": 15.8
   },
   "Voya Financial": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 80,
+   "scanned": 79,
    "junior_roles": 0,
-   "seconds": 8.3
+   "capped": false,
+   "seconds": 7.3
   },
   "T. Rowe Price": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 116,
+   "scanned": 117,
    "junior_roles": 3,
-   "seconds": 11.5
+   "capped": false,
+   "seconds": 10.9
   },
   "Mastercard": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 401,
-   "junior_roles": 2,
-   "seconds": 39.0
+   "scanned": 390,
+   "junior_roles": 3,
+   "capped": true,
+   "seconds": 32.6
   },
   "Visa": {
    "ok": true,
@@ -232,7 +260,8 @@
    "errors": [],
    "scanned": 34,
    "junior_roles": 10,
-   "seconds": 3.3
+   "capped": false,
+   "seconds": 2.5
   },
   "PayPal": {
    "ok": true,
@@ -240,31 +269,35 @@
    "errors": [],
    "scanned": 298,
    "junior_roles": 7,
-   "seconds": 33.1
+   "capped": false,
+   "seconds": 28.9
   },
   "Fiserv": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 138,
+   "scanned": 136,
    "junior_roles": 20,
-   "seconds": 8.1
+   "capped": false,
+   "seconds": 8.9
   },
   "Salesforce": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 593,
+   "scanned": 592,
    "junior_roles": 18,
-   "seconds": 39.5
+   "capped": true,
+   "seconds": 36.2
   },
   "Workday": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 386,
+   "scanned": 384,
    "junior_roles": 33,
-   "seconds": 89.0
+   "capped": true,
+   "seconds": 84.6
   },
   "Adobe": {
    "ok": true,
@@ -272,7 +305,8 @@
    "errors": [],
    "scanned": 271,
    "junior_roles": 13,
-   "seconds": 26.9
+   "capped": false,
+   "seconds": 24.7
   },
   "NVIDIA": {
    "ok": true,
@@ -280,7 +314,8 @@
    "errors": [],
    "scanned": 658,
    "junior_roles": 125,
-   "seconds": 48.0
+   "capped": true,
+   "seconds": 51.2
   },
   "Intel": {
    "ok": true,
@@ -288,15 +323,17 @@
    "errors": [],
    "scanned": 497,
    "junior_roles": 77,
-   "seconds": 46.2
+   "capped": true,
+   "seconds": 42.3
   },
   "Micron Technology": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 467,
+   "scanned": 465,
    "junior_roles": 19,
-   "seconds": 23.7
+   "capped": true,
+   "seconds": 24.4
   },
   "Broadcom": {
    "ok": true,
@@ -304,7 +341,8 @@
    "errors": [],
    "scanned": 156,
    "junior_roles": 21,
-   "seconds": 8.8
+   "capped": false,
+   "seconds": 6.8
   },
   "Qualcomm": {
    "ok": true,
@@ -312,15 +350,17 @@
    "errors": [],
    "scanned": 0,
    "junior_roles": 0,
-   "seconds": 4.5
+   "capped": false,
+   "seconds": 1.6
   },
   "Applied Materials": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 612,
+   "scanned": 610,
    "junior_roles": 62,
-   "seconds": 45.8
+   "capped": true,
+   "seconds": 39.0
   },
   "Dell Technologies": {
    "ok": false,
@@ -330,39 +370,44 @@
    ],
    "scanned": 0,
    "junior_roles": 0,
-   "seconds": 15.3
+   "capped": false,
+   "seconds": 13.4
   },
   "HP Inc.": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 520,
-   "junior_roles": 38,
-   "seconds": 49.6
+   "scanned": 162,
+   "junior_roles": 58,
+   "capped": true,
+   "seconds": 32.2
   },
   "Hewlett Packard Enterprise": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 545,
+   "scanned": 544,
    "junior_roles": 115,
-   "seconds": 47.2
+   "capped": true,
+   "seconds": 44.4
   },
   "Motorola Solutions": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 464,
+   "scanned": 467,
    "junior_roles": 114,
-   "seconds": 36.7
+   "capped": true,
+   "seconds": 36.2
   },
   "Comcast": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 73,
+   "scanned": 70,
    "junior_roles": 12,
-   "seconds": 10.0
+   "capped": false,
+   "seconds": 3.4
   },
   "AT&T": {
    "ok": true,
@@ -370,31 +415,35 @@
    "errors": [],
    "scanned": 377,
    "junior_roles": 11,
-   "seconds": 39.6
+   "capped": true,
+   "seconds": 26.4
   },
   "Walt Disney": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 158,
+   "scanned": 157,
    "junior_roles": 5,
-   "seconds": 11.0
+   "capped": false,
+   "seconds": 10.7
   },
   "Expedia Group": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 73,
+   "scanned": 70,
    "junior_roles": 1,
-   "seconds": 4.6
+   "capped": false,
+   "seconds": 4.2
   },
   "Target": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 291,
+   "scanned": 283,
    "junior_roles": 2,
-   "seconds": 32.2
+   "capped": false,
+   "seconds": 30.7
   },
   "Boeing": {
    "ok": true,
@@ -402,55 +451,62 @@
    "errors": [],
    "scanned": 440,
    "junior_roles": 30,
-   "seconds": 42.7
+   "capped": true,
+   "seconds": 41.1
   },
   "RTX": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 495,
-   "junior_roles": 55,
-   "seconds": 21.9
+   "junior_roles": 56,
+   "capped": true,
+   "seconds": 22.9
   },
   "Northrop Grumman": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 483,
+   "scanned": 482,
    "junior_roles": 25,
-   "seconds": 27.6
+   "capped": true,
+   "seconds": 23.8
   },
   "GE Aerospace": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 196,
+   "scanned": 197,
    "junior_roles": 10,
-   "seconds": 9.2
+   "capped": false,
+   "seconds": 9.0
   },
   "GE Vernova": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 443,
+   "scanned": 444,
    "junior_roles": 19,
-   "seconds": 19.9
+   "capped": true,
+   "seconds": 21.5
   },
   "Leidos": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 503,
-   "junior_roles": 168,
-   "seconds": 51.6
+   "scanned": 505,
+   "junior_roles": 170,
+   "capped": true,
+   "seconds": 55.5
   },
   "KBR": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 584,
+   "scanned": 583,
    "junior_roles": 43,
-   "seconds": 38.2
+   "capped": true,
+   "seconds": 42.3
   },
   "Otis Worldwide": {
    "ok": true,
@@ -458,23 +514,26 @@
    "errors": [],
    "scanned": 325,
    "junior_roles": 0,
-   "seconds": 30.7
+   "capped": true,
+   "seconds": 21.6
   },
   "Carrier Global": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 467,
+   "scanned": 461,
    "junior_roles": 10,
-   "seconds": 40.2
+   "capped": true,
+   "seconds": 41.7
   },
   "General Motors": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 456,
+   "scanned": 454,
    "junior_roles": 39,
-   "seconds": 48.3
+   "capped": true,
+   "seconds": 48.8
   },
   "3M": {
    "ok": true,
@@ -482,7 +541,8 @@
    "errors": [],
    "scanned": 333,
    "junior_roles": 23,
-   "seconds": 38.4
+   "capped": true,
+   "seconds": 22.6
   },
   "Pfizer": {
    "ok": true,
@@ -490,23 +550,26 @@
    "errors": [],
    "scanned": 321,
    "junior_roles": 0,
-   "seconds": 30.3
+   "capped": true,
+   "seconds": 26.1
   },
   "Merck": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 222,
+   "scanned": 221,
    "junior_roles": 2,
-   "seconds": 10.6
+   "capped": false,
+   "seconds": 10.3
   },
   "Eli Lilly": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 474,
+   "scanned": 470,
    "junior_roles": 4,
-   "seconds": 40.2
+   "capped": true,
+   "seconds": 26.3
   },
   "Abbott Laboratories": {
    "ok": true,
@@ -514,7 +577,8 @@
    "errors": [],
    "scanned": 538,
    "junior_roles": 13,
-   "seconds": 50.9
+   "capped": true,
+   "seconds": 47.7
   },
   "Thermo Fisher Scientific": {
    "ok": true,
@@ -522,39 +586,44 @@
    "errors": [],
    "scanned": 438,
    "junior_roles": 26,
-   "seconds": 17.4
+   "capped": true,
+   "seconds": 17.7
   },
   "Stryker": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 471,
+   "scanned": 472,
    "junior_roles": 13,
-   "seconds": 39.4
+   "capped": true,
+   "seconds": 50.4
   },
   "IQVIA": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 568,
+   "scanned": 567,
    "junior_roles": 28,
-   "seconds": 55.3
+   "capped": true,
+   "seconds": 43.0
   },
   "Kraft Heinz": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 396,
+   "scanned": 392,
    "junior_roles": 1,
-   "seconds": 32.7
+   "capped": true,
+   "seconds": 22.6
   },
   "Mondelez International": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 349,
+   "scanned": 347,
    "junior_roles": 3,
-   "seconds": 35.1
+   "capped": true,
+   "seconds": 31.1
   },
   "Constellation Brands": {
    "ok": true,
@@ -562,23 +631,26 @@
    "errors": [],
    "scanned": 27,
    "junior_roles": 0,
-   "seconds": 3.5
+   "capped": false,
+   "seconds": 2.6
   },
   "Lennar": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 124,
+   "scanned": 123,
    "junior_roles": 4,
-   "seconds": 12.1
+   "capped": false,
+   "seconds": 9.7
   },
   "Airbnb": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 191,
+   "scanned": 190,
    "junior_roles": 3,
-   "seconds": 0.1
+   "capped": false,
+   "seconds": 0.2
   },
   "DoorDash": {
    "ok": true,
@@ -586,7 +658,902 @@
    "errors": [],
    "scanned": 438,
    "junior_roles": 28,
+   "capped": false,
+   "seconds": 0.2
+  },
+  "Cisco": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 426,
+   "junior_roles": 117,
+   "capped": true,
+   "seconds": 20.1
+  },
+  "Analog Devices": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 545,
+   "junior_roles": 39,
+   "capped": true,
+   "seconds": 42.2
+  },
+  "KLA": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 629,
+   "junior_roles": 191,
+   "capped": true,
+   "seconds": 42.3
+  },
+  "Unum Group": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 76,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 10.6
+  },
+  "CDW": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 47,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 5.2
+  },
+  "General Dynamics (GDIT)": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 434,
+   "junior_roles": 90,
+   "capped": true,
+   "seconds": 41.5
+  },
+  "Prudential Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 40,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 4.4
+  },
+  "Booz Allen Hamilton": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 504,
+   "junior_roles": 231,
+   "capped": true,
+   "seconds": 45.4
+  },
+  "Nordstrom": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 178,
+   "junior_roles": 2,
+   "capped": false,
+   "seconds": 14.8
+  },
+  "Northwestern Mutual": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 25,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 4.1
+  },
+  "PulteGroup": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 74,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 5.6
+  },
+  "Ameriprise Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 60,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 5.2
+  },
+  "Synchrony Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 58,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 8.5
+  },
+  "Ally Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 76,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 6.5
+  },
+  "BlackRock": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 102,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 4.4
+  },
+  "S&P Global": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 296,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 29.4
+  },
+  "Amgen": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 784,
+   "junior_roles": 32,
+   "capped": true,
+   "seconds": 53.8
+  },
+  "Gilead Sciences": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 315,
+   "junior_roles": 0,
+   "capped": true,
+   "seconds": 22.4
+  },
+  "Bristol Myers Squibb": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 377,
+   "junior_roles": 1,
+   "capped": true,
+   "seconds": 29.2
+  },
+  "Labcorp": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 112,
+   "junior_roles": 3,
+   "capped": false,
+   "seconds": 5.9
+  },
+  "Johnson & Johnson": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 339,
+   "junior_roles": 10,
+   "capped": false,
+   "seconds": 18.0
+  },
+  "Danaher": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 345,
+   "junior_roles": 10,
+   "capped": true,
+   "seconds": 22.8
+  },
+  "Becton Dickinson": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 395,
+   "junior_roles": 2,
+   "capped": true,
+   "seconds": 36.9
+  },
+  "Baker Hughes": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 406,
+   "junior_roles": 14,
+   "capped": true,
+   "seconds": 35.1
+  },
+  "JPMorgan Chase": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 1000,
+   "junior_roles": 4,
+   "capped": true,
+   "seconds": 16.7
+  },
+  "Microsoft": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=software+engineer&location=&start=0&sort_by=timestamp"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "capped": true,
+   "seconds": 2.3
+  },
+  "Netflix": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 128,
+   "junior_roles": 17,
+   "capped": false,
+   "seconds": 25.4
+  },
+  "Lockheed Martin": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 153,
+   "junior_roles": 22,
+   "capped": true,
+   "seconds": 28.3
+  },
+  "Morgan Stanley": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 193,
+   "junior_roles": 21,
+   "capped": false,
+   "seconds": 41.1
+  },
+  "Ford Motor": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 237,
+   "junior_roles": 19,
+   "capped": true,
+   "seconds": 60.1
+  },
+  "Deere & Company": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 112,
+   "junior_roles": 27,
+   "capped": false,
+   "seconds": 26.6
+  },
+  "Starbucks": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 53,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 12.0
+  },
+  "Autodesk": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 31,
+   "junior_roles": 6,
+   "capped": false,
+   "seconds": 5.5
+  },
+  "Cadence Design Systems": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 4,
+   "junior_roles": 2,
+   "capped": false,
+   "seconds": 1.1
+  },
+  "Zillow": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 169,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 16.8
+  },
+  "Red Hat": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 157,
+   "junior_roles": 6,
+   "capped": false,
+   "seconds": 12.3
+  },
+  "CrowdStrike": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 150,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 10.7
+  },
+  "Snap": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 188,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 17.7
+  },
+  "Fidelity Investments": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 183,
+   "junior_roles": 4,
+   "capped": false,
+   "seconds": 19.6
+  },
+  "Accenture": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 891,
+   "junior_roles": 516,
+   "capped": true,
+   "seconds": 106.0
+  },
+  "Blue Origin": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 466,
+   "junior_roles": 17,
+   "capped": true,
+   "seconds": 32.8
+  },
+  "GlobalFoundries": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 524,
+   "junior_roles": 15,
+   "capped": true,
+   "seconds": 33.0
+  },
+  "Cox Enterprises": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 87,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 4.1
+  },
+  "ICF": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 338,
+   "junior_roles": 26,
+   "capped": true,
+   "seconds": 26.9
+  },
+  "Medtronic": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 468,
+   "junior_roles": 11,
+   "capped": true,
+   "seconds": 46.3
+  },
+  "Thomson Reuters": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 320,
+   "junior_roles": 7,
+   "capped": true,
+   "seconds": 26.3
+  },
+  "Stripe": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 731,
+   "junior_roles": 80,
+   "capped": false,
+   "seconds": 0.2
+  },
+  "Databricks": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 907,
+   "junior_roles": 19,
+   "capped": false,
    "seconds": 0.1
+  },
+  "Coinbase": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 232,
+   "junior_roles": 10,
+   "capped": false,
+   "seconds": 0.2
+  },
+  "Robinhood": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 166,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Lyft": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 177,
+   "junior_roles": 22,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Cloudflare": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 461,
+   "junior_roles": 27,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Datadog": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 397,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Reddit": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 165,
+   "junior_roles": 9,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Dropbox": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 23,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Figma": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 143,
+   "junior_roles": 15,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Discord": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 44,
+   "junior_roles": 3,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Instacart": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 93,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "MongoDB": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 369,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Okta": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 385,
+   "junior_roles": 4,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Roblox": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 266,
+   "junior_roles": 20,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Anthropic": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 672,
+   "junior_roles": 20,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "SoFi": {
+   "ok": false,
+   "partial": true,
+   "errors": [
+    "HTTP 404 from https://boards-api.greenhouse.io/v1/boards/galileofinancialtechnologies/jobs"
+   ],
+   "scanned": 4,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 7.8
+  },
+  "Toast": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 331,
+   "junior_roles": 2,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Gusto": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 88,
+   "junior_roles": 3,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Chime": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 72,
+   "junior_roles": 7,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "GitLab": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 231,
+   "junior_roles": 8,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Pinterest": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 165,
+   "junior_roles": 6,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Twilio": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 129,
+   "junior_roles": 9,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Scale AI": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 169,
+   "junior_roles": 17,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Affirm": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 238,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Samsara": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 317,
+   "junior_roles": 5,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Asana": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 111,
+   "junior_roles": 11,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Anduril": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 2552,
+   "junior_roles": 172,
+   "capped": false,
+   "seconds": 22.8
+  },
+  "SpaceX": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 2835,
+   "junior_roles": 246,
+   "capped": false,
+   "seconds": 22.1
+  },
+  "Verkada": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 337,
+   "junior_roles": 13,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Applied Intuition": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "HTTP 404 from https://boards-api.greenhouse.io/v1/boards/appliedintuition/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Waymo": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 368,
+   "junior_roles": 31,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Duolingo": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 63,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Brex": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 262,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Grammarly": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "HTTP 404 from https://boards-api.greenhouse.io/v1/boards/grammarly/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Airtable": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 5,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Peloton": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 58,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Vercel": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 92,
+   "junior_roles": 17,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Flexport": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 191,
+   "junior_roles": 2,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Checkr": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 46,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Braze": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 340,
+   "junior_roles": 1,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Canonical": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 314,
+   "junior_roles": 54,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "PlayStation (Sony)": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 200,
+   "junior_roles": 13,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Palantir": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 302,
+   "junior_roles": 129,
+   "capped": false,
+   "seconds": 1.2
+  },
+  "Spotify": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 89,
+   "junior_roles": 2,
+   "capped": false,
+   "seconds": 0.8
+  },
+  "Plaid": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "HTTP 404 from https://api.lever.co/v0/postings/plaid?mode=json"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 5.4
+  },
+  "OpenAI": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 813,
+   "junior_roles": 161,
+   "capped": false,
+   "seconds": 0.2
+  },
+  "Notion": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 144,
+   "junior_roles": 17,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Ramp": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 168,
+   "junior_roles": 24,
+   "capped": false,
+   "seconds": 0.1
+  },
+  "Replit": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 33,
+   "junior_roles": 3,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Whatnot": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "HTTP 404 from https://api.ashbyhq.com/posting-api/job-board/whatnot"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "capped": false,
+   "seconds": 0.0
+  },
+  "Cursor": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 123,
+   "junior_roles": 26,
+   "capped": false,
+   "seconds": 0.0
   }
  }
 }
