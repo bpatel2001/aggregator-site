@@ -1,0 +1,592 @@
+{
+ "run_at": "2026-10-29T17:49:41+00:00",
+ "check_only": false,
+ "companies": {
+  "Walmart": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 846,
+   "junior_roles": 2,
+   "seconds": 72.5
+  },
+  "Amazon": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 600,
+   "junior_roles": 341,
+   "seconds": 10.3
+  },
+  "CVS Health": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 503,
+   "junior_roles": 4,
+   "seconds": 29.6
+  },
+  "Elevance Health": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 39,
+   "junior_roles": 1,
+   "seconds": 2.6
+  },
+  "Cigna": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 352,
+   "junior_roles": 20,
+   "seconds": 35.6
+  },
+  "Centene": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 311,
+   "junior_roles": 0,
+   "seconds": 24.2
+  },
+  "Humana": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 196,
+   "junior_roles": 0,
+   "seconds": 24.2
+  },
+  "Cardinal Health": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 341,
+   "junior_roles": 11,
+   "seconds": 41.6
+  },
+  "McKesson": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 375,
+   "junior_roles": 25,
+   "seconds": 41.4
+  },
+  "Chevron": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 22,
+   "junior_roles": 2,
+   "seconds": 2.5
+  },
+  "Marathon Petroleum": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 116,
+   "junior_roles": 0,
+   "seconds": 12.3
+  },
+  "Bank of America": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 165,
+   "junior_roles": 3,
+   "seconds": 15.3
+  },
+  "Wells Fargo": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 373,
+   "junior_roles": 2,
+   "seconds": 36.5
+  },
+  "Citigroup": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 807,
+   "junior_roles": 102,
+   "seconds": 69.8
+  },
+  "Capital One": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 460,
+   "junior_roles": 1,
+   "seconds": 21.4
+  },
+  "U.S. Bancorp": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 451,
+   "junior_roles": 9,
+   "seconds": 48.0
+  },
+  "PNC Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 333,
+   "junior_roles": 2,
+   "seconds": 29.8
+  },
+  "Truist Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 564,
+   "junior_roles": 12,
+   "seconds": 55.8
+  },
+  "KeyCorp": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 70,
+   "junior_roles": 1,
+   "seconds": 7.8
+  },
+  "State Street": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 439,
+   "junior_roles": 30,
+   "seconds": 42.7
+  },
+  "Fannie Mae": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 52,
+   "junior_roles": 1,
+   "seconds": 8.1
+  },
+  "USAA": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 57,
+   "junior_roles": 2,
+   "seconds": 4.8
+  },
+  "Travelers": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 383,
+   "junior_roles": 4,
+   "seconds": 44.0
+  },
+  "Allstate": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 400,
+   "junior_roles": 6,
+   "seconds": 42.7
+  },
+  "Nationwide": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 158,
+   "junior_roles": 3,
+   "seconds": 20.9
+  },
+  "Voya Financial": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 80,
+   "junior_roles": 0,
+   "seconds": 8.3
+  },
+  "T. Rowe Price": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 116,
+   "junior_roles": 3,
+   "seconds": 11.5
+  },
+  "Mastercard": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 401,
+   "junior_roles": 2,
+   "seconds": 39.0
+  },
+  "Visa": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 34,
+   "junior_roles": 10,
+   "seconds": 3.3
+  },
+  "PayPal": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 298,
+   "junior_roles": 7,
+   "seconds": 33.1
+  },
+  "Fiserv": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 138,
+   "junior_roles": 20,
+   "seconds": 8.1
+  },
+  "Salesforce": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 593,
+   "junior_roles": 18,
+   "seconds": 39.5
+  },
+  "Workday": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 386,
+   "junior_roles": 33,
+   "seconds": 89.0
+  },
+  "Adobe": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 271,
+   "junior_roles": 13,
+   "seconds": 26.9
+  },
+  "NVIDIA": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 658,
+   "junior_roles": 125,
+   "seconds": 48.0
+  },
+  "Intel": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 497,
+   "junior_roles": 77,
+   "seconds": 46.2
+  },
+  "Micron Technology": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 467,
+   "junior_roles": 19,
+   "seconds": 23.7
+  },
+  "Broadcom": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 156,
+   "junior_roles": 21,
+   "seconds": 8.8
+  },
+  "Qualcomm": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 0,
+   "junior_roles": 0,
+   "seconds": 4.5
+  },
+  "Applied Materials": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 612,
+   "junior_roles": 62,
+   "seconds": 45.8
+  },
+  "Dell Technologies": {
+   "ok": false,
+   "partial": false,
+   "errors": [
+    "No working Workday host for https://dell.wd1.myworkdayjobs.com/External (first error: HTTP 422 from https://dell.wd1.myworkdayjobs.com/wday/cxs/dell/External/jobs)"
+   ],
+   "scanned": 0,
+   "junior_roles": 0,
+   "seconds": 15.3
+  },
+  "HP Inc.": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 520,
+   "junior_roles": 38,
+   "seconds": 49.6
+  },
+  "Hewlett Packard Enterprise": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 545,
+   "junior_roles": 115,
+   "seconds": 47.2
+  },
+  "Motorola Solutions": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 464,
+   "junior_roles": 114,
+   "seconds": 36.7
+  },
+  "Comcast": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 73,
+   "junior_roles": 12,
+   "seconds": 10.0
+  },
+  "AT&T": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 377,
+   "junior_roles": 11,
+   "seconds": 39.6
+  },
+  "Walt Disney": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 158,
+   "junior_roles": 5,
+   "seconds": 11.0
+  },
+  "Expedia Group": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 73,
+   "junior_roles": 1,
+   "seconds": 4.6
+  },
+  "Target": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 291,
+   "junior_roles": 2,
+   "seconds": 32.2
+  },
+  "Boeing": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 440,
+   "junior_roles": 30,
+   "seconds": 42.7
+  },
+  "RTX": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 495,
+   "junior_roles": 55,
+   "seconds": 21.9
+  },
+  "Northrop Grumman": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 483,
+   "junior_roles": 25,
+   "seconds": 27.6
+  },
+  "GE Aerospace": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 196,
+   "junior_roles": 10,
+   "seconds": 9.2
+  },
+  "GE Vernova": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 443,
+   "junior_roles": 19,
+   "seconds": 19.9
+  },
+  "Leidos": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 503,
+   "junior_roles": 168,
+   "seconds": 51.6
+  },
+  "KBR": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 584,
+   "junior_roles": 43,
+   "seconds": 38.2
+  },
+  "Otis Worldwide": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 325,
+   "junior_roles": 0,
+   "seconds": 30.7
+  },
+  "Carrier Global": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 467,
+   "junior_roles": 10,
+   "seconds": 40.2
+  },
+  "General Motors": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 456,
+   "junior_roles": 39,
+   "seconds": 48.3
+  },
+  "3M": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 333,
+   "junior_roles": 23,
+   "seconds": 38.4
+  },
+  "Pfizer": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 321,
+   "junior_roles": 0,
+   "seconds": 30.3
+  },
+  "Merck": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 222,
+   "junior_roles": 2,
+   "seconds": 10.6
+  },
+  "Eli Lilly": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 474,
+   "junior_roles": 4,
+   "seconds": 40.2
+  },
+  "Abbott Laboratories": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 538,
+   "junior_roles": 13,
+   "seconds": 50.9
+  },
+  "Thermo Fisher Scientific": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 438,
+   "junior_roles": 26,
+   "seconds": 17.4
+  },
+  "Stryker": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 471,
+   "junior_roles": 13,
+   "seconds": 39.4
+  },
+  "IQVIA": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 568,
+   "junior_roles": 28,
+   "seconds": 55.3
+  },
+  "Kraft Heinz": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 396,
+   "junior_roles": 1,
+   "seconds": 32.7
+  },
+  "Mondelez International": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 349,
+   "junior_roles": 3,
+   "seconds": 35.1
+  },
+  "Constellation Brands": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 27,
+   "junior_roles": 0,
+   "seconds": 3.5
+  },
+  "Lennar": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 124,
+   "junior_roles": 4,
+   "seconds": 12.1
+  },
+  "Airbnb": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 191,
+   "junior_roles": 3,
+   "seconds": 0.1
+  },
+  "DoorDash": {
+   "ok": true,
+   "partial": false,
+   "errors": [],
+   "scanned": 438,
+   "junior_roles": 28,
+   "seconds": 0.1
+  }
+ }
+}
