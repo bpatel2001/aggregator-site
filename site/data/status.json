@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-13T17:50:04+00:00",
+ "run_at": "2026-11-13T23:39:57+00:00",
  "check_only": false,
  "companies": {
   "Walmart": {
@@ -9,106 +9,115 @@
    "scanned": 836,
    "junior_roles": 1,
    "capped": true,
-   "seconds": 72.3
+   "seconds": 69.7
   },
   "Amazon": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 600,
-   "junior_roles": 502,
+   "junior_roles": 513,
    "capped": true,
-   "seconds": 9.2
+   "seconds": 7.7
   },
   "CVS Health": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 487,
+   "scanned": 489,
    "junior_roles": 11,
    "capped": true,
-   "seconds": 31.1
+   "seconds": 22.9
   },
   "Elevance Health": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 31,
+   "scanned": 35,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 2.0
+   "seconds": 1.8
   },
   "Cigna": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 350,
-   "junior_roles": 29,
-   "capped": true,
-   "seconds": 36.8
+   "errors": [
+    "HTTP 521 from https://cigna.wd5.myworkdayjobs.com/wday/cxs/cigna/cignacareers/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 24,
+   "capped": false,
+   "seconds": 12.8
   },
   "Centene": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 311,
+   "errors": [
+    "HTTP 521 from https://centene.wd5.myworkdayjobs.com/wday/cxs/centene/Centene_External/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
-   "capped": true,
-   "seconds": 27.4
+   "capped": false,
+   "seconds": 12.6
   },
   "Humana": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 191,
+   "errors": [
+    "HTTP 521 from https://humana.wd5.myworkdayjobs.com/wday/cxs/humana/Humana_External_Career_Site/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 17.7
+   "seconds": 12.5
   },
   "Cardinal Health": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 333,
+   "scanned": 334,
    "junior_roles": 12,
    "capped": true,
-   "seconds": 34.2
+   "seconds": 25.3
   },
   "McKesson": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 362,
+   "scanned": 364,
    "junior_roles": 30,
    "capped": true,
-   "seconds": 35.1
+   "seconds": 30.1
   },
   "Chevron": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 68,
+   "errors": [
+    "HTTP 521 from https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/University/jobs",
+    "HTTP 521 from https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/jobs/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 10,
    "capped": false,
-   "seconds": 4.2
+   "seconds": 25.2
   },
   "Marathon Petroleum": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 110,
+   "scanned": 114,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 10.1
+   "seconds": 8.8
   },
   "Bank of America": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 145,
-   "junior_roles": 4,
+   "scanned": 144,
+   "junior_roles": 3,
    "capped": false,
-   "seconds": 8.0
+   "seconds": 7.1
   },
   "Wells Fargo": {
    "ok": true,
@@ -117,16 +126,18 @@
    "scanned": 341,
    "junior_roles": 9,
    "capped": true,
-   "seconds": 27.9
+   "seconds": 24.0
   },
   "Citigroup": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 834,
-   "junior_roles": 151,
-   "capped": true,
-   "seconds": 106.7
+   "errors": [
+    "HTTP 521 from https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 126,
+   "capped": false,
+   "seconds": 12.6
   },
   "Capital One": {
    "ok": true,
@@ -135,133 +146,147 @@
    "scanned": 461,
    "junior_roles": 3,
    "capped": true,
-   "seconds": 21.5
+   "seconds": 20.2
   },
   "U.S. Bancorp": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 442,
-   "junior_roles": 17,
+   "scanned": 446,
+   "junior_roles": 18,
    "capped": true,
-   "seconds": 36.8
+   "seconds": 34.8
   },
   "PNC Financial": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 321,
-   "junior_roles": 9,
-   "capped": true,
-   "seconds": 30.1
+   "errors": [
+    "HTTP 521 from https://pnc.wd5.myworkdayjobs.com/wday/cxs/pnc/External/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 7,
+   "capped": false,
+   "seconds": 12.6
   },
   "Truist Financial": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 558,
-   "junior_roles": 21,
+   "scanned": 559,
+   "junior_roles": 22,
    "capped": true,
-   "seconds": 52.4
+   "seconds": 44.4
   },
   "KeyCorp": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 58,
+   "errors": [
+    "HTTP 521 from https://keybank.wd5.myworkdayjobs.com/wday/cxs/keybank/External_Career_Site/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 5.2
+   "seconds": 12.6
   },
   "State Street": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 451,
+   "scanned": 453,
    "junior_roles": 56,
    "capped": true,
-   "seconds": 37.2
+   "seconds": 32.7
   },
   "Fannie Mae": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 59,
-   "junior_roles": 2,
+   "scanned": 62,
+   "junior_roles": 3,
    "capped": false,
-   "seconds": 5.9
+   "seconds": 6.2
   },
   "USAA": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 41,
+   "scanned": 48,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 1.8
+   "seconds": 2.8
   },
   "Travelers": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 392,
-   "junior_roles": 5,
-   "capped": true,
-   "seconds": 46.3
+   "errors": [
+    "HTTP 521 from https://travelers.wd5.myworkdayjobs.com/wday/cxs/travelers/External/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 4,
+   "capped": false,
+   "seconds": 12.6
   },
   "Allstate": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 378,
+   "errors": [
+    "HTTP 521 from https://allstate.wd5.myworkdayjobs.com/wday/cxs/allstate/allstate_careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 7,
-   "capped": true,
-   "seconds": 39.5
+   "capped": false,
+   "seconds": 12.6
   },
   "Nationwide": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 163,
-   "junior_roles": 8,
+   "scanned": 165,
+   "junior_roles": 9,
    "capped": false,
-   "seconds": 16.2
+   "seconds": 15.1
   },
   "Voya Financial": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 86,
+   "errors": [
+    "HTTP 521 from https://godirect.wd5.myworkdayjobs.com/wday/cxs/godirect/voya_jobs/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 8.9
+   "seconds": 12.8
   },
   "T. Rowe Price": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 112,
+   "errors": [
+    "HTTP 521 from https://troweprice.wd5.myworkdayjobs.com/wday/cxs/troweprice/TRowePrice/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 11.5
+   "seconds": 12.6
   },
   "Mastercard": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 358,
+   "scanned": 355,
    "junior_roles": 5,
    "capped": true,
-   "seconds": 31.0
+   "seconds": 30.9
   },
   "Visa": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 28,
+   "errors": [
+    "HTTP 521 from https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 6.2
+   "seconds": 12.7
   },
   "PayPal": {
    "ok": true,
@@ -270,61 +295,70 @@
    "scanned": 302,
    "junior_roles": 14,
    "capped": true,
-   "seconds": 25.2
+   "seconds": 24.6
   },
   "Fiserv": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 140,
+   "errors": [
+    "HTTP 521 from https://fiserv.wd5.myworkdayjobs.com/wday/cxs/fiserv/EXT/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 18,
    "capped": false,
-   "seconds": 8.7
+   "seconds": 12.5
   },
   "Salesforce": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 584,
+   "scanned": 588,
    "junior_roles": 22,
    "capped": true,
-   "seconds": 37.8
+   "seconds": 36.9
   },
   "Workday": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 352,
-   "junior_roles": 42,
-   "capped": true,
-   "seconds": 89.6
+   "errors": [
+    "HTTP 521 from https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs",
+    "HTTP 521 from https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday_Early_Career/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 33,
+   "capped": false,
+   "seconds": 25.2
   },
   "Adobe": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 238,
+   "errors": [
+    "HTTP 521 from https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 10,
    "capped": false,
-   "seconds": 20.0
+   "seconds": 12.7
   },
   "NVIDIA": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 657,
-   "junior_roles": 143,
-   "capped": true,
-   "seconds": 47.8
+   "errors": [
+    "HTTP 521 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 127,
+   "capped": false,
+   "seconds": 12.6
   },
   "Intel": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 504,
+   "scanned": 499,
    "junior_roles": 105,
    "capped": true,
-   "seconds": 39.1
+   "seconds": 37.1
   },
   "Micron Technology": {
    "ok": true,
@@ -333,16 +367,16 @@
    "scanned": 453,
    "junior_roles": 29,
    "capped": true,
-   "seconds": 20.2
+   "seconds": 18.1
   },
   "Broadcom": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 151,
-   "junior_roles": 16,
+   "scanned": 150,
+   "junior_roles": 15,
    "capped": false,
-   "seconds": 7.1
+   "seconds": 5.3
   },
   "Qualcomm": {
    "ok": true,
@@ -351,16 +385,16 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 1.8
+   "seconds": 1.7
   },
   "Applied Materials": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 610,
+   "scanned": 607,
    "junior_roles": 79,
    "capped": true,
-   "seconds": 39.8
+   "seconds": 36.9
   },
   "Dell Technologies": {
    "ok": false,
@@ -371,7 +405,7 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 14.6
+   "seconds": 15.5
   },
   "HP Inc.": {
    "ok": true,
@@ -380,34 +414,38 @@
    "scanned": 157,
    "junior_roles": 37,
    "capped": true,
-   "seconds": 29.7
+   "seconds": 30.0
   },
   "Hewlett Packard Enterprise": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 536,
-   "junior_roles": 140,
-   "capped": true,
-   "seconds": 45.9
+   "errors": [
+    "HTTP 521 from https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/WFMathpe/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 121,
+   "capped": false,
+   "seconds": 12.6
   },
   "Motorola Solutions": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 480,
-   "junior_roles": 149,
-   "capped": true,
-   "seconds": 37.4
+   "errors": [
+    "HTTP 521 from https://motorolasolutions.wd5.myworkdayjobs.com/wday/cxs/motorolasolutions/Careers/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 130,
+   "capped": false,
+   "seconds": 12.5
   },
   "Comcast": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 57,
-   "junior_roles": 8,
+   "scanned": 59,
+   "junior_roles": 9,
    "capped": false,
-   "seconds": 2.3
+   "seconds": 3.3
   },
   "AT&T": {
    "ok": true,
@@ -416,16 +454,18 @@
    "scanned": 375,
    "junior_roles": 9,
    "capped": true,
-   "seconds": 27.9
+   "seconds": 26.3
   },
   "Walt Disney": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 10,
+   "errors": [
+    "HTTP 521 from https://disney.wd5.myworkdayjobs.com/wday/cxs/disney/disneycareer/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 1.7
+   "seconds": 12.6
   },
   "Expedia Group": {
    "ok": true,
@@ -434,79 +474,91 @@
    "scanned": 44,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 1.6
+   "seconds": 1.5
   },
   "Target": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 243,
+   "errors": [
+    "HTTP 521 from https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 28.4
+   "seconds": 12.7
   },
   "Boeing": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 450,
-   "junior_roles": 41,
+   "scanned": 462,
+   "junior_roles": 40,
    "capped": true,
-   "seconds": 43.3
+   "seconds": 36.1
   },
   "RTX": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 480,
-   "junior_roles": 112,
-   "capped": true,
-   "seconds": 21.3
+   "errors": [
+    "HTTP 521 from https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 84,
+   "capped": false,
+   "seconds": 12.6
   },
   "Northrop Grumman": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 485,
+   "scanned": 487,
    "junior_roles": 58,
    "capped": true,
-   "seconds": 25.4
+   "seconds": 21.7
   },
   "GE Aerospace": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 137,
+   "errors": [
+    "HTTP 521 from https://geaerospace.wd5.myworkdayjobs.com/wday/cxs/geaerospace/GE_ExternalSite/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 5.9
+   "seconds": 12.5
   },
   "GE Vernova": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 402,
-   "junior_roles": 33,
-   "capped": true,
-   "seconds": 18.0
+   "errors": [
+    "HTTP 521 from https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 30,
+   "capped": false,
+   "seconds": 12.5
   },
   "Leidos": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 485,
-   "junior_roles": 204,
-   "capped": true,
-   "seconds": 49.1
+   "errors": [
+    "HTTP 521 from https://leidos.wd5.myworkdayjobs.com/wday/cxs/leidos/External/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 182,
+   "capped": false,
+   "seconds": 12.6
   },
   "KBR": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 584,
+   "errors": [
+    "HTTP 521 from https://kbr.wd5.myworkdayjobs.com/wday/cxs/kbr/KBR_Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 44,
-   "capped": true,
-   "seconds": 39.7
+   "capped": false,
+   "seconds": 12.7
   },
   "Otis Worldwide": {
    "ok": true,
@@ -515,25 +567,29 @@
    "scanned": 325,
    "junior_roles": 0,
    "capped": true,
-   "seconds": 19.7
+   "seconds": 18.5
   },
   "Carrier Global": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 439,
-   "junior_roles": 17,
-   "capped": true,
-   "seconds": 36.0
+   "errors": [
+    "HTTP 521 from https://carrier.wd5.myworkdayjobs.com/wday/cxs/carrier/jobs/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 15,
+   "capped": false,
+   "seconds": 12.6
   },
   "General Motors": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 458,
-   "junior_roles": 44,
-   "capped": true,
-   "seconds": 49.6
+   "errors": [
+    "HTTP 521 from https://generalmotors.wd5.myworkdayjobs.com/wday/cxs/generalmotors/Careers_GM/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 35,
+   "capped": false,
+   "seconds": 12.7
   },
   "3M": {
    "ok": true,
@@ -542,112 +598,120 @@
    "scanned": 334,
    "junior_roles": 25,
    "capped": true,
-   "seconds": 23.9
+   "seconds": 21.4
   },
   "Pfizer": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 327,
-   "junior_roles": 0,
+   "scanned": 326,
+   "junior_roles": 1,
    "capped": true,
-   "seconds": 27.0
+   "seconds": 25.0
   },
   "Merck": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 173,
+   "errors": [
+    "HTTP 521 from https://msd.wd5.myworkdayjobs.com/wday/cxs/msd/SearchJobs/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 9.1
+   "seconds": 12.6
   },
   "Eli Lilly": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 409,
+   "scanned": 414,
    "junior_roles": 9,
    "capped": true,
-   "seconds": 26.1
+   "seconds": 23.7
   },
   "Abbott Laboratories": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 537,
-   "junior_roles": 16,
-   "capped": true,
-   "seconds": 46.6
+   "errors": [
+    "HTTP 521 from https://abbott.wd5.myworkdayjobs.com/wday/cxs/abbott/abbottcareers/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 13,
+   "capped": false,
+   "seconds": 12.6
   },
   "Thermo Fisher Scientific": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 469,
-   "junior_roles": 45,
-   "capped": true,
-   "seconds": 19.8
+   "errors": [
+    "HTTP 521 from https://thermofisher.wd5.myworkdayjobs.com/wday/cxs/thermofisher/thermofishercareers/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 42,
+   "capped": false,
+   "seconds": 12.7
   },
   "Stryker": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 466,
+   "scanned": 468,
    "junior_roles": 15,
    "capped": true,
-   "seconds": 36.2
+   "seconds": 32.8
   },
   "IQVIA": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 562,
+   "scanned": 569,
    "junior_roles": 39,
    "capped": true,
-   "seconds": 44.3
+   "seconds": 39.4
   },
   "Kraft Heinz": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 400,
+   "scanned": 403,
    "junior_roles": 1,
    "capped": true,
-   "seconds": 25.5
+   "seconds": 25.1
   },
   "Mondelez International": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 348,
+   "scanned": 347,
    "junior_roles": 5,
    "capped": true,
-   "seconds": 35.9
+   "seconds": 28.0
   },
   "Constellation Brands": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 31,
+   "errors": [
+    "HTTP 521 from https://cbrands.wd5.myworkdayjobs.com/wday/cxs/cbrands/CBI_External_Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 3.0
+   "seconds": 12.5
   },
   "Lennar": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 100,
+   "scanned": 98,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 11.5
+   "seconds": 7.6
   },
   "Airbnb": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 216,
+   "scanned": 215,
    "junior_roles": 3,
    "capped": false,
    "seconds": 0.1
@@ -656,154 +720,171 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 433,
+   "scanned": 427,
    "junior_roles": 27,
    "capped": false,
-   "seconds": 0.5
+   "seconds": 0.1
   },
   "Cisco": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 402,
-   "junior_roles": 231,
-   "capped": true,
-   "seconds": 20.6
+   "errors": [
+    "HTTP 521 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 171,
+   "capped": false,
+   "seconds": 12.6
   },
   "Analog Devices": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 528,
+   "scanned": 529,
    "junior_roles": 57,
    "capped": true,
-   "seconds": 44.5
+   "seconds": 38.2
   },
   "KLA": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 637,
+   "scanned": 636,
    "junior_roles": 232,
    "capped": true,
-   "seconds": 50.2
+   "seconds": 52.7
   },
   "Unum Group": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 77,
+   "scanned": 76,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 8.5
+   "seconds": 7.3
   },
   "CDW": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 57,
+   "errors": [
+    "HTTP 521 from https://cdw.wd5.myworkdayjobs.com/wday/cxs/cdw/Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 6.2
+   "seconds": 12.8
   },
   "General Dynamics (GDIT)": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 432,
-   "junior_roles": 126,
-   "capped": true,
-   "seconds": 40.7
+   "errors": [
+    "HTTP 521 from https://gdit.wd5.myworkdayjobs.com/wday/cxs/gdit/External_Career_Site/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 116,
+   "capped": false,
+   "seconds": 12.6
   },
   "Prudential Financial": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 45,
+   "errors": [
+    "HTTP 521 from https://pru.wd5.myworkdayjobs.com/wday/cxs/pru/Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 3.7
+   "seconds": 12.6
   },
   "Booz Allen Hamilton": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 493,
-   "junior_roles": 283,
+   "junior_roles": 286,
    "capped": true,
-   "seconds": 43.1
+   "seconds": 35.9
   },
   "Nordstrom": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 155,
+   "scanned": 156,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 10.6
+   "seconds": 10.2
   },
   "Northwestern Mutual": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 30,
+   "errors": [
+    "HTTP 521 from https://northwesternmutual.wd5.myworkdayjobs.com/wday/cxs/northwesternmutual/CORPORATE-CAREERS/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 6.8
+   "seconds": 12.5
   },
   "PulteGroup": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 68,
+   "scanned": 67,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 8.5
+   "seconds": 5.9
   },
   "Ameriprise Financial": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 63,
+   "errors": [
+    "HTTP 521 from https://ameriprise.wd5.myworkdayjobs.com/wday/cxs/ameriprise/Ameriprise/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 7.1
+   "seconds": 12.6
   },
   "Synchrony Financial": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 36,
+   "errors": [
+    "HTTP 521 from https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/careers/jobs",
+    "HTTP 521 from https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/University/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 5.8
+   "seconds": 25.5
   },
   "Ally Financial": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 83,
+   "scanned": 90,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 8.8
+   "seconds": 6.2
   },
   "BlackRock": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 97,
-   "junior_roles": 13,
+   "scanned": 94,
+   "junior_roles": 14,
    "capped": false,
-   "seconds": 4.6
+   "seconds": 3.7
   },
   "S&P Global": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 314,
+   "errors": [
+    "HTTP 521 from https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 2,
-   "capped": true,
-   "seconds": 49.6
+   "capped": false,
+   "seconds": 12.6
   },
   "Amgen": {
    "ok": true,
@@ -812,7 +893,7 @@
    "scanned": 795,
    "junior_roles": 34,
    "capped": true,
-   "seconds": 60.6
+   "seconds": 51.6
   },
   "Gilead Sciences": {
    "ok": true,
@@ -821,61 +902,67 @@
    "scanned": 307,
    "junior_roles": 1,
    "capped": true,
-   "seconds": 18.6
+   "seconds": 16.1
   },
   "Bristol Myers Squibb": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 380,
+   "errors": [
+    "HTTP 521 from https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 1,
-   "capped": true,
-   "seconds": 31.1
+   "capped": false,
+   "seconds": 12.6
   },
   "Labcorp": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 100,
+   "scanned": 102,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 4.2
+   "seconds": 3.7
   },
   "Johnson & Johnson": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 324,
+   "errors": [
+    "HTTP 521 from https://jj.wd5.myworkdayjobs.com/wday/cxs/jj/JJ/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 6,
    "capped": false,
-   "seconds": 15.1
+   "seconds": 12.6
   },
   "Danaher": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 342,
+   "scanned": 341,
    "junior_roles": 13,
    "capped": true,
-   "seconds": 21.2
+   "seconds": 20.1
   },
   "Becton Dickinson": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 370,
+   "scanned": 369,
    "junior_roles": 2,
    "capped": true,
-   "seconds": 35.9
+   "seconds": 30.1
   },
   "Baker Hughes": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 397,
-   "junior_roles": 29,
-   "capped": true,
-   "seconds": 52.0
+   "errors": [
+    "HTTP 521 from https://bakerhughes.wd5.myworkdayjobs.com/wday/cxs/bakerhughes/BakerHughes/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 21,
+   "capped": false,
+   "seconds": 12.5
   },
   "JPMorgan Chase": {
    "ok": true,
@@ -884,7 +971,7 @@
    "scanned": 1000,
    "junior_roles": 10,
    "capped": true,
-   "seconds": 14.1
+   "seconds": 13.2
   },
   "Microsoft": {
    "ok": false,
@@ -895,52 +982,52 @@
    "scanned": 0,
    "junior_roles": 9,
    "capped": true,
-   "seconds": 2.2
+   "seconds": 2.5
   },
   "Netflix": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 109,
+   "scanned": 60,
    "junior_roles": 19,
    "capped": true,
-   "seconds": 21.9
+   "seconds": 12.8
   },
   "Lockheed Martin": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 287,
+   "scanned": 238,
    "junior_roles": 70,
    "capped": true,
-   "seconds": 56.1
+   "seconds": 47.7
   },
   "Morgan Stanley": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 180,
+   "scanned": 152,
    "junior_roles": 16,
-   "capped": false,
-   "seconds": 38.6
+   "capped": true,
+   "seconds": 33.0
   },
   "Ford Motor": {
    "ok": true,
    "partial": false,
    "errors": [],
    "scanned": 242,
-   "junior_roles": 33,
+   "junior_roles": 32,
    "capped": true,
-   "seconds": 61.3
+   "seconds": 60.8
   },
   "Deere & Company": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 129,
+   "scanned": 130,
    "junior_roles": 31,
    "capped": false,
-   "seconds": 29.3
+   "seconds": 29.8
   },
   "Starbucks": {
    "ok": true,
@@ -949,7 +1036,7 @@
    "scanned": 52,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.1
+   "seconds": 13.0
   },
   "Autodesk": {
    "ok": true,
@@ -958,43 +1045,49 @@
    "scanned": 4,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 4.8
+   "seconds": 4.0
   },
   "Cadence Design Systems": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 4,
+   "scanned": 3,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 1.0
+   "seconds": 0.8
   },
   "Zillow": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 173,
+   "errors": [
+    "HTTP 521 from https://zillow.wd5.myworkdayjobs.com/wday/cxs/zillow/Zillow_Group_External/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 8,
    "capped": false,
-   "seconds": 14.8
+   "seconds": 12.6
   },
   "Red Hat": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 134,
+   "errors": [
+    "HTTP 521 from https://redhat.wd5.myworkdayjobs.com/wday/cxs/redhat/Jobs/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 9.8
+   "seconds": 12.6
   },
   "CrowdStrike": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 180,
+   "errors": [
+    "HTTP 521 from https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 13.9
+   "seconds": 12.6
   },
   "Snap": {
    "ok": true,
@@ -1003,86 +1096,92 @@
    "scanned": 195,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 16.4
+   "seconds": 17.1
   },
   "Fidelity Investments": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 193,
-   "junior_roles": 6,
+   "scanned": 198,
+   "junior_roles": 9,
    "capped": false,
-   "seconds": 16.2
+   "seconds": 15.0
   },
   "Accenture": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 852,
-   "junior_roles": 641,
+   "scanned": 860,
+   "junior_roles": 550,
    "capped": true,
-   "seconds": 106.0
+   "seconds": 92.2
   },
   "Blue Origin": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 466,
-   "junior_roles": 20,
-   "capped": true,
-   "seconds": 32.9
+   "errors": [
+    "HTTP 521 from https://blueorigin.wd5.myworkdayjobs.com/wday/cxs/blueorigin/BlueOrigin/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 18,
+   "capped": false,
+   "seconds": 12.8
   },
   "GlobalFoundries": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 542,
+   "scanned": 538,
    "junior_roles": 21,
    "capped": true,
-   "seconds": 37.1
+   "seconds": 30.2
   },
   "Cox Enterprises": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 97,
+   "scanned": 96,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 4.2
+   "seconds": 3.5
   },
   "ICF": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 322,
-   "junior_roles": 30,
-   "capped": true,
-   "seconds": 24.4
+   "errors": [
+    "HTTP 521 from https://icf.wd5.myworkdayjobs.com/wday/cxs/icf/ICFExternal_Career_Site/jobs"
+   ],
+   "scanned": 0,
+   "junior_roles": 25,
+   "capped": false,
+   "seconds": 12.6
   },
   "Medtronic": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 430,
+   "scanned": 435,
    "junior_roles": 22,
    "capped": true,
-   "seconds": 46.1
+   "seconds": 42.2
   },
   "Thomson Reuters": {
-   "ok": true,
+   "ok": false,
    "partial": false,
-   "errors": [],
-   "scanned": 333,
+   "errors": [
+    "HTTP 521 from https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs"
+   ],
+   "scanned": 0,
    "junior_roles": 14,
-   "capped": true,
-   "seconds": 27.8
+   "capped": false,
+   "seconds": 12.5
   },
   "Stripe": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 785,
-   "junior_roles": 83,
+   "scanned": 786,
+   "junior_roles": 84,
    "capped": false,
    "seconds": 0.3
   },
@@ -1090,16 +1189,16 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 906,
+   "scanned": 893,
    "junior_roles": 22,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Coinbase": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 266,
+   "scanned": 265,
    "junior_roles": 11,
    "capped": false,
    "seconds": 0.1
@@ -1108,8 +1207,8 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 160,
-   "junior_roles": 12,
+   "scanned": 164,
+   "junior_roles": 13,
    "capped": false,
    "seconds": 0.1
   },
@@ -1117,7 +1216,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 151,
+   "scanned": 150,
    "junior_roles": 17,
    "capped": false,
    "seconds": 0.1
@@ -1126,25 +1225,25 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 477,
-   "junior_roles": 26,
+   "scanned": 479,
+   "junior_roles": 27,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Datadog": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 385,
+   "scanned": 384,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Reddit": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 146,
+   "scanned": 145,
    "junior_roles": 9,
    "capped": false,
    "seconds": 0.1
@@ -1153,7 +1252,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 42,
+   "scanned": 44,
    "junior_roles": 7,
    "capped": false,
    "seconds": 0.1
@@ -1162,7 +1261,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 144,
+   "scanned": 139,
    "junior_roles": 17,
    "capped": false,
    "seconds": 0.1
@@ -1171,16 +1270,16 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 25,
+   "scanned": 26,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.0
   },
   "Instacart": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 90,
+   "scanned": 85,
    "junior_roles": 0,
    "capped": false,
    "seconds": 0.1
@@ -1189,34 +1288,34 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 389,
+   "scanned": 391,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Okta": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 360,
+   "scanned": 363,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Roblox": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 274,
+   "scanned": 271,
    "junior_roles": 21,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Anthropic": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 671,
+   "scanned": 670,
    "junior_roles": 16,
    "capped": false,
    "seconds": 0.1
@@ -1227,25 +1326,25 @@
    "errors": [
     "HTTP 404 from https://boards-api.greenhouse.io/v1/boards/galileofinancialtechnologies/jobs"
    ],
-   "scanned": 6,
+   "scanned": 5,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Toast": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 351,
+   "scanned": 353,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Gusto": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 76,
+   "scanned": 75,
    "junior_roles": 2,
    "capped": false,
    "seconds": 0.1
@@ -1254,7 +1353,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 68,
+   "scanned": 71,
    "junior_roles": 9,
    "capped": false,
    "seconds": 0.1
@@ -1272,7 +1371,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 166,
+   "scanned": 164,
    "junior_roles": 6,
    "capped": false,
    "seconds": 0.1
@@ -1290,7 +1389,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 171,
+   "scanned": 170,
    "junior_roles": 16,
    "capped": false,
    "seconds": 0.1
@@ -1308,7 +1407,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 312,
+   "scanned": 313,
    "junior_roles": 3,
    "capped": false,
    "seconds": 0.1
@@ -1326,25 +1425,25 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 2589,
-   "junior_roles": 162,
+   "scanned": 2592,
+   "junior_roles": 161,
    "capped": false,
-   "seconds": 59.8
+   "seconds": 0.1
   },
   "SpaceX": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 2850,
-   "junior_roles": 240,
+   "scanned": 2778,
+   "junior_roles": 236,
    "capped": false,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   "Verkada": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 346,
+   "scanned": 347,
    "junior_roles": 15,
    "capped": false,
    "seconds": 0.1
@@ -1364,7 +1463,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 378,
+   "scanned": 376,
    "junior_roles": 24,
    "capped": false,
    "seconds": 0.1
@@ -1373,16 +1472,16 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 65,
+   "scanned": 64,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Brex": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 283,
+   "scanned": 282,
    "junior_roles": 2,
    "capped": false,
    "seconds": 0.1
@@ -1396,7 +1495,7 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Airtable": {
    "ok": true,
@@ -1405,7 +1504,7 @@
    "scanned": 9,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Peloton": {
    "ok": true,
@@ -1414,14 +1513,14 @@
    "scanned": 41,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Vercel": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 88,
-   "junior_roles": 16,
+   "scanned": 86,
+   "junior_roles": 15,
    "capped": false,
    "seconds": 0.1
   },
@@ -1429,7 +1528,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 201,
+   "scanned": 203,
    "junior_roles": 2,
    "capped": false,
    "seconds": 0.1
@@ -1447,7 +1546,7 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 348,
+   "scanned": 345,
    "junior_roles": 1,
    "capped": false,
    "seconds": 0.1
@@ -1459,16 +1558,16 @@
    "scanned": 316,
    "junior_roles": 54,
    "capped": false,
-   "seconds": 0.3
+   "seconds": 0.1
   },
   "PlayStation (Sony)": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 234,
-   "junior_roles": 14,
+   "scanned": 230,
+   "junior_roles": 13,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Palantir": {
    "ok": true,
@@ -1486,7 +1585,7 @@
    "scanned": 85,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   "Plaid": {
    "ok": false,
@@ -1497,16 +1596,16 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 4.5
+   "seconds": 0.4
   },
   "OpenAI": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 831,
-   "junior_roles": 156,
+   "scanned": 837,
+   "junior_roles": 158,
    "capped": false,
-   "seconds": 0.3
+   "seconds": 0.2
   },
   "Notion": {
    "ok": true,
@@ -1515,14 +1614,14 @@
    "scanned": 167,
    "junior_roles": 18,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Ramp": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 179,
-   "junior_roles": 26,
+   "scanned": 180,
+   "junior_roles": 27,
    "capped": false,
    "seconds": 0.1
   },
@@ -1530,10 +1629,10 @@
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 31,
-   "junior_roles": 2,
+   "scanned": 30,
+   "junior_roles": 1,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Whatnot": {
    "ok": false,
@@ -1544,14 +1643,14 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Cursor": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 116,
-   "junior_roles": 19,
+   "scanned": 100,
+   "junior_roles": 4,
    "capped": false,
    "seconds": 0.1
   }
