@@ -1,5 +1,5 @@
 {
- "run_at": "2026-11-14T06:39:26+00:00",
+ "run_at": "2026-11-14T14:15:38+00:00",
  "check_only": false,
  "companies": {
   "Walmart": {
@@ -9,7 +9,7 @@
    "scanned": 837,
    "junior_roles": 1,
    "capped": true,
-   "seconds": 69.3
+   "seconds": 66.6
   },
   "Amazon": {
    "ok": true,
@@ -18,73 +18,73 @@
    "scanned": 600,
    "junior_roles": 513,
    "capped": true,
-   "seconds": 10.5
+   "seconds": 7.5
   },
   "CVS Health": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cvshealth.wd1.myworkdayjobs.com/wday/cxs/cvshealth/CVS_Health_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 8,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.9
   },
   "Elevance Health": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/ANT/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://elevancehealth.wd1.myworkdayjobs.com/wday/cxs/elevancehealth/ANT/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Cigna": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cigna.wd5.myworkdayjobs.com/wday/cxs/cigna/cignacareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cigna.wd5.myworkdayjobs.com/wday/cxs/cigna/cignacareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 24,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 13.2
   },
   "Centene": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://centene.wd5.myworkdayjobs.com/wday/cxs/centene/Centene_External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://centene.wd5.myworkdayjobs.com/wday/cxs/centene/Centene_External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 13.5
   },
   "Humana": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://humana.wd5.myworkdayjobs.com/wday/cxs/humana/Humana_External_Career_Site/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://humana.wd5.myworkdayjobs.com/wday/cxs/humana/Humana_External_Career_Site/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 13.2
   },
   "Cardinal Health": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cardinalhealth.wd1.myworkdayjobs.com/wday/cxs/cardinalhealth/EXT/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cardinalhealth.wd1.myworkdayjobs.com/wday/cxs/cardinalhealth/EXT/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 11,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "McKesson": {
    "ok": true,
@@ -93,63 +93,63 @@
    "scanned": 362,
    "junior_roles": 30,
    "capped": true,
-   "seconds": 31.8
+   "seconds": 29.9
   },
   "Chevron": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/University/jobs",
-    "HTTP 521 from https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/jobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/University/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://chevron.wd5.myworkdayjobs.com/wday/cxs/chevron/jobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 10,
    "capped": false,
-   "seconds": 25.0
+   "seconds": 56.2
   },
   "Marathon Petroleum": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://mpc.wd1.myworkdayjobs.com/wday/cxs/mpc/MPCCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://mpc.wd1.myworkdayjobs.com/wday/cxs/mpc/MPCCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 12.9
   },
   "Bank of America": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://ghr.wd1.myworkdayjobs.com/wday/cxs/ghr/Lateral-US/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://ghr.wd1.myworkdayjobs.com/wday/cxs/ghr/Lateral-US/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Wells Fargo": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://wf.wd1.myworkdayjobs.com/wday/cxs/wf/WellsFargoJobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://wf.wd1.myworkdayjobs.com/wday/cxs/wf/WellsFargoJobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 7,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.8
   },
   "Citigroup": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://citi.wd5.myworkdayjobs.com/wday/cxs/citi/2/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 126,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Capital One": {
    "ok": true,
@@ -158,237 +158,235 @@
    "scanned": 458,
    "junior_roles": 3,
    "capped": true,
-   "seconds": 21.3
+   "seconds": 20.0
   },
   "U.S. Bancorp": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://usbank.wd1.myworkdayjobs.com/wday/cxs/usbank/US_Bank_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://usbank.wd1.myworkdayjobs.com/wday/cxs/usbank/US_Bank_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 12,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.8
   },
   "PNC Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://pnc.wd5.myworkdayjobs.com/wday/cxs/pnc/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://pnc.wd5.myworkdayjobs.com/wday/cxs/pnc/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 7,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 43.2
   },
   "Truist Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://truist.wd1.myworkdayjobs.com/wday/cxs/truist/Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://truist.wd1.myworkdayjobs.com/wday/cxs/truist/Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 19,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "KeyCorp": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://keybank.wd5.myworkdayjobs.com/wday/cxs/keybank/External_Career_Site/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://keybank.wd5.myworkdayjobs.com/wday/cxs/keybank/External_Career_Site/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 33.1
   },
   "State Street": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://statestreet.wd1.myworkdayjobs.com/wday/cxs/statestreet/Global/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 53,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Fannie Mae": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://fanniemae.wd1.myworkdayjobs.com/wday/cxs/fanniemae/FannieMaeCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://fanniemae.wd1.myworkdayjobs.com/wday/cxs/fanniemae/FannieMaeCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 13.1
   },
   "USAA": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://usaa.wd1.myworkdayjobs.com/wday/cxs/usaa/USAAJOBSWD/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://usaa.wd1.myworkdayjobs.com/wday/cxs/usaa/USAAJOBSWD/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 42.9
   },
   "Travelers": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://travelers.wd5.myworkdayjobs.com/wday/cxs/travelers/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://travelers.wd5.myworkdayjobs.com/wday/cxs/travelers/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 43.3
   },
   "Allstate": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://allstate.wd5.myworkdayjobs.com/wday/cxs/allstate/allstate_careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://allstate.wd5.myworkdayjobs.com/wday/cxs/allstate/allstate_careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 7,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 43.0
   },
   "Nationwide": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://nationwide.wd1.myworkdayjobs.com/wday/cxs/nationwide/Nationwide_Career/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://nationwide.wd1.myworkdayjobs.com/wday/cxs/nationwide/Nationwide_Career/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 9,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Voya Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://godirect.wd5.myworkdayjobs.com/wday/cxs/godirect/voya_jobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://godirect.wd5.myworkdayjobs.com/wday/cxs/godirect/voya_jobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.3
   },
   "T. Rowe Price": {
-   "ok": false,
+   "ok": true,
    "partial": false,
-   "errors": [
-    "HTTP 521 from https://troweprice.wd5.myworkdayjobs.com/wday/cxs/troweprice/TRowePrice/jobs"
-   ],
-   "scanned": 0,
+   "errors": [],
+   "scanned": 110,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 56.2
   },
   "Mastercard": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.8
   },
   "Visa": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa_Early_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.6
   },
   "PayPal": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://paypal.wd1.myworkdayjobs.com/wday/cxs/paypal/jobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 14,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.8
   },
   "Fiserv": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://fiserv.wd5.myworkdayjobs.com/wday/cxs/fiserv/EXT/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://fiserv.wd5.myworkdayjobs.com/wday/cxs/fiserv/EXT/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 18,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Salesforce": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 589,
+   "scanned": 587,
    "junior_roles": 22,
    "capped": true,
-   "seconds": 29.0
+   "seconds": 27.7
   },
   "Workday": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs",
-    "HTTP 521 from https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday_Early_Career/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://workday.wd5.myworkdayjobs.com/wday/cxs/workday/Workday_Early_Career/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 33,
    "capped": false,
-   "seconds": 25.1
+   "seconds": 26.0
   },
   "Adobe": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://adobe.wd5.myworkdayjobs.com/wday/cxs/adobe/external_experienced/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 10,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 43.0
   },
   "NVIDIA": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 127,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.9
   },
   "Intel": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 87,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.8
   },
   "Micron Technology": {
    "ok": true,
@@ -397,18 +395,18 @@
    "scanned": 204,
    "junior_roles": 38,
    "capped": true,
-   "seconds": 54.4
+   "seconds": 57.2
   },
   "Broadcom": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 15,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 13.1
   },
   "Qualcomm": {
    "ok": true,
@@ -423,23 +421,23 @@
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://amat.wd1.myworkdayjobs.com/wday/cxs/amat/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 73,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Dell Technologies": {
    "ok": false,
    "partial": false,
    "errors": [
-    "No working Workday host for https://dell.wd1.myworkdayjobs.com/External (first error: HTTP 521 from https://dell.wd1.myworkdayjobs.com/wday/cxs/dell/External/jobs)"
+    "No working Workday host for https://dell.wd1.myworkdayjobs.com/External (first error: HTTP 422 from https://dell.wd1.myworkdayjobs.com/wday/cxs/dell/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 18.4
+   "seconds": 13.8
   },
   "HP Inc.": {
    "ok": true,
@@ -454,23 +452,23 @@
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/WFMathpe/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/WFMathpe/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 121,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.2
   },
   "Motorola Solutions": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://motorolasolutions.wd5.myworkdayjobs.com/wday/cxs/motorolasolutions/Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://motorolasolutions.wd5.myworkdayjobs.com/wday/cxs/motorolasolutions/Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 130,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Comcast": {
    "ok": true,
@@ -485,24 +483,24 @@
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://att.wd1.myworkdayjobs.com/wday/cxs/att/ATTGeneral/jobs",
-    "HTTP 521 from https://att.wd1.myworkdayjobs.com/wday/cxs/att/ATTCollege/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://att.wd1.myworkdayjobs.com/wday/cxs/att/ATTGeneral/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://att.wd1.myworkdayjobs.com/wday/cxs/att/ATTCollege/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 9,
    "capped": false,
-   "seconds": 24.8
+   "seconds": 56.6
   },
   "Walt Disney": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://disney.wd5.myworkdayjobs.com/wday/cxs/disney/disneycareer/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://disney.wd5.myworkdayjobs.com/wday/cxs/disney/disneycareer/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.2
   },
   "Expedia Group": {
    "ok": true,
@@ -511,40 +509,40 @@
    "scanned": 43,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 2.2
+   "seconds": 1.5
   },
   "Target": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://target.wd5.myworkdayjobs.com/wday/cxs/target/targetcareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Boeing": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/EXTERNAL_CAREERS/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/EXTERNAL_CAREERS/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 32,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.8
   },
   "RTX": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 84,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Northrop Grumman": {
    "ok": true,
@@ -553,51 +551,49 @@
    "scanned": 151,
    "junior_roles": 61,
    "capped": true,
-   "seconds": 41.6
+   "seconds": 71.2
   },
   "GE Aerospace": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://geaerospace.wd5.myworkdayjobs.com/wday/cxs/geaerospace/GE_ExternalSite/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://geaerospace.wd5.myworkdayjobs.com/wday/cxs/geaerospace/GE_ExternalSite/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "GE Vernova": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://gevernova.wd5.myworkdayjobs.com/wday/cxs/gevernova/Vernova_ExternalSite/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 30,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 13.0
   },
   "Leidos": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://leidos.wd5.myworkdayjobs.com/wday/cxs/leidos/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://leidos.wd5.myworkdayjobs.com/wday/cxs/leidos/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 182,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 13.1
   },
   "KBR": {
-   "ok": false,
+   "ok": true,
    "partial": false,
-   "errors": [
-    "HTTP 521 from https://kbr.wd5.myworkdayjobs.com/wday/cxs/kbr/KBR_Careers/jobs"
-   ],
-   "scanned": 0,
+   "errors": [],
+   "scanned": 585,
    "junior_roles": 44,
-   "capped": false,
-   "seconds": 12.4
+   "capped": true,
+   "seconds": 37.0
   },
   "Otis Worldwide": {
    "ok": true,
@@ -606,62 +602,62 @@
    "scanned": 325,
    "junior_roles": 0,
    "capped": true,
-   "seconds": 18.8
+   "seconds": 18.4
   },
   "Carrier Global": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://carrier.wd5.myworkdayjobs.com/wday/cxs/carrier/jobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://carrier.wd5.myworkdayjobs.com/wday/cxs/carrier/jobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 15,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.2
   },
   "General Motors": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://generalmotors.wd5.myworkdayjobs.com/wday/cxs/generalmotors/Careers_GM/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://generalmotors.wd5.myworkdayjobs.com/wday/cxs/generalmotors/Careers_GM/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 35,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "3M": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://3m.wd1.myworkdayjobs.com/wday/cxs/3m/Search/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 23,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.9
   },
   "Pfizer": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://pfizer.wd1.myworkdayjobs.com/wday/cxs/pfizer/PfizerCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.8
   },
   "Merck": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://msd.wd5.myworkdayjobs.com/wday/cxs/msd/SearchJobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://msd.wd5.myworkdayjobs.com/wday/cxs/msd/SearchJobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Eli Lilly": {
    "ok": true,
@@ -670,62 +666,62 @@
    "scanned": 411,
    "junior_roles": 9,
    "capped": true,
-   "seconds": 24.3
+   "seconds": 24.2
   },
   "Abbott Laboratories": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://abbott.wd5.myworkdayjobs.com/wday/cxs/abbott/abbottcareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://abbott.wd5.myworkdayjobs.com/wday/cxs/abbott/abbottcareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 13,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 43.3
   },
   "Thermo Fisher Scientific": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://thermofisher.wd5.myworkdayjobs.com/wday/cxs/thermofisher/thermofishercareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://thermofisher.wd5.myworkdayjobs.com/wday/cxs/thermofisher/thermofishercareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 42,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Stryker": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://stryker.wd1.myworkdayjobs.com/wday/cxs/stryker/StrykerCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 11,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "IQVIA": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://iqvia.wd1.myworkdayjobs.com/wday/cxs/iqvia/IQVIA/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://iqvia.wd1.myworkdayjobs.com/wday/cxs/iqvia/IQVIA/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 33,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 42.9
   },
   "Kraft Heinz": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://heinz.wd1.myworkdayjobs.com/wday/cxs/heinz/KraftHeinz_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://heinz.wd1.myworkdayjobs.com/wday/cxs/heinz/KraftHeinz_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Mondelez International": {
    "ok": true,
@@ -734,30 +730,30 @@
    "scanned": 347,
    "junior_roles": 5,
    "capped": true,
-   "seconds": 30.6
+   "seconds": 27.9
   },
   "Constellation Brands": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cbrands.wd5.myworkdayjobs.com/wday/cxs/cbrands/CBI_External_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cbrands.wd5.myworkdayjobs.com/wday/cxs/cbrands/CBI_External_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.1
   },
   "Lennar": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://lennar.wd1.myworkdayjobs.com/wday/cxs/lennar/lennar_jobs/jobs",
-    "HTTP 521 from https://lennar.wd1.myworkdayjobs.com/wday/cxs/lennar/Early_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://lennar.wd1.myworkdayjobs.com/wday/cxs/lennar/lennar_jobs/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://lennar.wd1.myworkdayjobs.com/wday/cxs/lennar/Early_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 24.9
+   "seconds": 55.8
   },
   "Airbnb": {
    "ok": true,
@@ -781,90 +777,90 @@
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cisco.wd5.myworkdayjobs.com/wday/cxs/cisco/Cisco_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 171,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.2
   },
   "Analog Devices": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://analogdevices.wd1.myworkdayjobs.com/wday/cxs/analogdevices/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://analogdevices.wd1.myworkdayjobs.com/wday/cxs/analogdevices/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 54,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "KLA": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs",
-    "HTTP 521 from https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/UR/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/Search/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://kla.wd1.myworkdayjobs.com/wday/cxs/kla/UR/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 205,
    "capped": false,
-   "seconds": 24.9
+   "seconds": 55.7
   },
   "Unum Group": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://unum.wd1.myworkdayjobs.com/wday/cxs/unum/external/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://unum.wd1.myworkdayjobs.com/wday/cxs/unum/external/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.9
   },
   "CDW": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cdw.wd5.myworkdayjobs.com/wday/cxs/cdw/Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cdw.wd5.myworkdayjobs.com/wday/cxs/cdw/Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.3
   },
   "General Dynamics (GDIT)": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://gdit.wd5.myworkdayjobs.com/wday/cxs/gdit/External_Career_Site/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://gdit.wd5.myworkdayjobs.com/wday/cxs/gdit/External_Career_Site/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 116,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Prudential Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://pru.wd5.myworkdayjobs.com/wday/cxs/pru/Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://pru.wd5.myworkdayjobs.com/wday/cxs/pru/Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Booz Allen Hamilton": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://bah.wd1.myworkdayjobs.com/wday/cxs/bah/BAH_Jobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://bah.wd1.myworkdayjobs.com/wday/cxs/bah/BAH_Jobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 246,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Nordstrom": {
    "ok": true,
@@ -873,174 +869,174 @@
    "scanned": 155,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 9.9
+   "seconds": 9.8
   },
   "Northwestern Mutual": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://northwesternmutual.wd5.myworkdayjobs.com/wday/cxs/northwesternmutual/CORPORATE-CAREERS/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://northwesternmutual.wd5.myworkdayjobs.com/wday/cxs/northwesternmutual/CORPORATE-CAREERS/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.5
   },
   "PulteGroup": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://pultegroup.wd1.myworkdayjobs.com/wday/cxs/pultegroup/PGI/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://pultegroup.wd1.myworkdayjobs.com/wday/cxs/pultegroup/PGI/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.5
   },
   "Ameriprise Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://ameriprise.wd5.myworkdayjobs.com/wday/cxs/ameriprise/Ameriprise/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://ameriprise.wd5.myworkdayjobs.com/wday/cxs/ameriprise/Ameriprise/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Synchrony Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/careers/jobs",
-    "HTTP 521 from https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/University/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/careers/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://synchronyfinancial.wd5.myworkdayjobs.com/wday/cxs/synchronyfinancial/University/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 25.0
+   "seconds": 56.1
   },
   "Ally Financial": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://ally.wd1.myworkdayjobs.com/wday/cxs/ally/Ally/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://ally.wd1.myworkdayjobs.com/wday/cxs/ally/Ally/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 32.2
   },
   "BlackRock": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://blackrock.wd1.myworkdayjobs.com/wday/cxs/blackrock/BlackRock_Professional/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://blackrock.wd1.myworkdayjobs.com/wday/cxs/blackrock/BlackRock_Professional/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 14,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "S&P Global": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://spgi.wd5.myworkdayjobs.com/wday/cxs/spgi/SPGI_Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 32.6
   },
   "Amgen": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://amgen.wd1.myworkdayjobs.com/wday/cxs/amgen/Careers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 32,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Gilead Sciences": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://gilead.wd1.myworkdayjobs.com/wday/cxs/gilead/gileadcareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Bristol Myers Squibb": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://bristolmyerssquibb.wd5.myworkdayjobs.com/wday/cxs/bristolmyerssquibb/BMS/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.5
   },
   "Labcorp": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://labcorp.wd1.myworkdayjobs.com/wday/cxs/labcorp/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://labcorp.wd1.myworkdayjobs.com/wday/cxs/labcorp/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Johnson & Johnson": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://jj.wd5.myworkdayjobs.com/wday/cxs/jj/JJ/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://jj.wd5.myworkdayjobs.com/wday/cxs/jj/JJ/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 6,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.5
   },
   "Danaher": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://danaher.wd1.myworkdayjobs.com/wday/cxs/danaher/DanaherJobs/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://danaher.wd1.myworkdayjobs.com/wday/cxs/danaher/DanaherJobs/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 12,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Becton Dickinson": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://bdx.wd1.myworkdayjobs.com/wday/cxs/bdx/EXTERNAL_CAREER_SITE_USA/jobs",
-    "HTTP 521 from https://bdx.wd1.myworkdayjobs.com/wday/cxs/bdx/US_EARLY_TALENT_SITE/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://bdx.wd1.myworkdayjobs.com/wday/cxs/bdx/EXTERNAL_CAREER_SITE_USA/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://bdx.wd1.myworkdayjobs.com/wday/cxs/bdx/US_EARLY_TALENT_SITE/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 24.8
+   "seconds": 55.8
   },
   "Baker Hughes": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://bakerhughes.wd5.myworkdayjobs.com/wday/cxs/bakerhughes/BakerHughes/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://bakerhughes.wd5.myworkdayjobs.com/wday/cxs/bakerhughes/BakerHughes/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 21,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.9
   },
   "JPMorgan Chase": {
    "ok": true,
@@ -1049,18 +1045,16 @@
    "scanned": 1000,
    "junior_roles": 10,
    "capped": true,
-   "seconds": 13.4
+   "seconds": 12.9
   },
   "Microsoft": {
-   "ok": false,
+   "ok": true,
    "partial": false,
-   "errors": [
-    "HTTP 429 from https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=software+engineer&location=&start=0&sort_by=timestamp"
-   ],
-   "scanned": 0,
-   "junior_roles": 9,
+   "errors": [],
+   "scanned": 50,
+   "junior_roles": 14,
    "capped": true,
-   "seconds": 2.3
+   "seconds": 25.1
   },
   "Netflix": {
    "ok": true,
@@ -1069,16 +1063,16 @@
    "scanned": 132,
    "junior_roles": 19,
    "capped": false,
-   "seconds": 27.0
+   "seconds": 26.5
   },
   "Lockheed Martin": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 150,
+   "scanned": 157,
    "junior_roles": 70,
    "capped": true,
-   "seconds": 29.6
+   "seconds": 31.9
   },
   "Morgan Stanley": {
    "ok": true,
@@ -1087,187 +1081,183 @@
    "scanned": 180,
    "junior_roles": 16,
    "capped": false,
-   "seconds": 39.6
+   "seconds": 37.3
   },
   "Ford Motor": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 242,
+   "scanned": 243,
    "junior_roles": 32,
    "capped": true,
-   "seconds": 62.7
+   "seconds": 59.8
   },
   "Deere & Company": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 126,
+   "scanned": 125,
    "junior_roles": 31,
    "capped": false,
-   "seconds": 31.1
+   "seconds": 30.5
   },
   "Starbucks": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 52,
+   "scanned": 51,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 12.8
+   "seconds": 13.6
   },
   "Autodesk": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/Ext/jobs",
-    "HTTP 521 from https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/uni/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/Ext/jobs)",
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://autodesk.wd1.myworkdayjobs.com/wday/cxs/autodesk/uni/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 24.8
+   "seconds": 55.9
   },
   "Cadence Design Systems": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/University_Talent/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cadence.wd1.myworkdayjobs.com/wday/cxs/cadence/University_Talent/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 13.0
   },
   "Zillow": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://zillow.wd5.myworkdayjobs.com/wday/cxs/zillow/Zillow_Group_External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://zillow.wd5.myworkdayjobs.com/wday/cxs/zillow/Zillow_Group_External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 8,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.6
   },
   "Red Hat": {
-   "ok": false,
+   "ok": true,
    "partial": false,
-   "errors": [
-    "HTTP 521 from https://redhat.wd5.myworkdayjobs.com/wday/cxs/redhat/Jobs/jobs"
-   ],
-   "scanned": 0,
+   "errors": [],
+   "scanned": 134,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 12.6
+   "seconds": 9.2
   },
   "CrowdStrike": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.0
   },
   "Snap": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://snapchat.wd1.myworkdayjobs.com/wday/cxs/snapchat/snap/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://snapchat.wd1.myworkdayjobs.com/wday/cxs/snapchat/snap/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 13.0
   },
   "Fidelity Investments": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://fmr.wd1.myworkdayjobs.com/wday/cxs/fmr/FidelityCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://fmr.wd1.myworkdayjobs.com/wday/cxs/fmr/FidelityCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 9,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 13.0
   },
   "Accenture": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 853,
+   "scanned": 848,
    "junior_roles": 550,
    "capped": true,
-   "seconds": 96.2
+   "seconds": 90.0
   },
   "Blue Origin": {
-   "ok": false,
+   "ok": true,
    "partial": false,
-   "errors": [
-    "HTTP 521 from https://blueorigin.wd5.myworkdayjobs.com/wday/cxs/blueorigin/BlueOrigin/jobs"
-   ],
-   "scanned": 0,
+   "errors": [],
+   "scanned": 466,
    "junior_roles": 18,
-   "capped": false,
-   "seconds": 12.5
+   "capped": true,
+   "seconds": 30.0
   },
   "GlobalFoundries": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://globalfoundries.wd1.myworkdayjobs.com/wday/cxs/globalfoundries/External/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://globalfoundries.wd1.myworkdayjobs.com/wday/cxs/globalfoundries/External/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 20,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 12.9
   },
   "Cox Enterprises": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://cox.wd1.myworkdayjobs.com/wday/cxs/cox/Cox_External_Career_Site_1/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://cox.wd1.myworkdayjobs.com/wday/cxs/cox/Cox_External_Career_Site_1/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "ICF": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://icf.wd5.myworkdayjobs.com/wday/cxs/icf/ICFExternal_Career_Site/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://icf.wd5.myworkdayjobs.com/wday/cxs/icf/ICFExternal_Career_Site/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 25,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 13.1
   },
   "Medtronic": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://medtronic.wd1.myworkdayjobs.com/wday/cxs/medtronic/MedtronicCareers/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 19,
    "capped": false,
-   "seconds": 12.4
+   "seconds": 12.9
   },
   "Thomson Reuters": {
    "ok": false,
    "partial": false,
    "errors": [
-    "HTTP 521 from https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs"
+    "JSONDecodeError: Expecting value: line 1 column 1 (char 0) (https://thomsonreuters.wd5.myworkdayjobs.com/wday/cxs/thomsonreuters/External_Career_Site/jobs)"
    ],
    "scanned": 0,
    "junior_roles": 14,
    "capped": false,
-   "seconds": 12.5
+   "seconds": 32.6
   },
   "Stripe": {
    "ok": true,
@@ -1285,7 +1275,7 @@
    "scanned": 896,
    "junior_roles": 22,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Coinbase": {
    "ok": true,
@@ -1303,7 +1293,7 @@
    "scanned": 165,
    "junior_roles": 13,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Lyft": {
    "ok": true,
@@ -1339,7 +1329,7 @@
    "scanned": 145,
    "junior_roles": 9,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Dropbox": {
    "ok": true,
@@ -1348,7 +1338,7 @@
    "scanned": 44,
    "junior_roles": 7,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Figma": {
    "ok": true,
@@ -1357,7 +1347,7 @@
    "scanned": 139,
    "junior_roles": 17,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Discord": {
    "ok": true,
@@ -1366,7 +1356,7 @@
    "scanned": 26,
    "junior_roles": 1,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Instacart": {
    "ok": true,
@@ -1384,7 +1374,7 @@
    "scanned": 391,
    "junior_roles": 5,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Okta": {
    "ok": true,
@@ -1402,13 +1392,13 @@
    "scanned": 271,
    "junior_roles": 21,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Anthropic": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 670,
+   "scanned": 669,
    "junior_roles": 15,
    "capped": false,
    "seconds": 0.1
@@ -1422,7 +1412,7 @@
    "scanned": 5,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Toast": {
    "ok": true,
@@ -1440,7 +1430,7 @@
    "scanned": 75,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Chime": {
    "ok": true,
@@ -1476,7 +1466,7 @@
    "scanned": 115,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Scale AI": {
    "ok": true,
@@ -1494,16 +1484,16 @@
    "scanned": 217,
    "junior_roles": 9,
    "capped": false,
-   "seconds": 0.3
+   "seconds": 0.1
   },
   "Samsara": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 313,
+   "scanned": 314,
    "junior_roles": 3,
    "capped": false,
-   "seconds": 0.4
+   "seconds": 0.1
   },
   "Asana": {
    "ok": true,
@@ -1512,16 +1502,16 @@
    "scanned": 109,
    "junior_roles": 7,
    "capped": false,
-   "seconds": 0.4
+   "seconds": 0.1
   },
   "Anduril": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 2597,
+   "scanned": 2599,
    "junior_roles": 163,
    "capped": false,
-   "seconds": 27.1
+   "seconds": 0.1
   },
   "SpaceX": {
    "ok": true,
@@ -1530,7 +1520,7 @@
    "scanned": 2758,
    "junior_roles": 236,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Verkada": {
    "ok": true,
@@ -1539,7 +1529,7 @@
    "scanned": 347,
    "junior_roles": 15,
    "capped": false,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   "Applied Intuition": {
    "ok": false,
@@ -1550,7 +1540,7 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Waymo": {
    "ok": true,
@@ -1577,7 +1567,7 @@
    "scanned": 286,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Grammarly": {
    "ok": false,
@@ -1588,7 +1578,7 @@
    "scanned": 0,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Airtable": {
    "ok": true,
@@ -1597,7 +1587,7 @@
    "scanned": 9,
    "junior_roles": 0,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Peloton": {
    "ok": true,
@@ -1624,7 +1614,7 @@
    "scanned": 204,
    "junior_roles": 2,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   },
   "Checkr": {
    "ok": true,
@@ -1669,16 +1659,16 @@
    "scanned": 302,
    "junior_roles": 134,
    "capped": false,
-   "seconds": 0.7
+   "seconds": 1.1
   },
   "Spotify": {
    "ok": true,
    "partial": false,
    "errors": [],
-   "scanned": 85,
+   "scanned": 87,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 0.6
+   "seconds": 0.7
   },
   "Plaid": {
    "ok": false,
@@ -1745,7 +1735,7 @@
    "scanned": 99,
    "junior_roles": 4,
    "capped": false,
-   "seconds": 0.1
+   "seconds": 0.0
   }
  }
 }
